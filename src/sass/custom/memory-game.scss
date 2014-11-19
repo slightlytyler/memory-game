@@ -1,0 +1,33 @@
+.memory-game {
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  section[class^="intro"] {
+    display: block;
+    margin: 0 auto;
+
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+
+    &[class*="--main"] {
+      position: fixed;
+      font-size: 42px;
+
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    span{ display: block; }
+  }
+  .game, .outro, .bottom-bar { display: none; }
+}

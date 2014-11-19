@@ -8,15 +8,6 @@
 
 @import "../components/foundation/scss/normalize.scss";
 
-/*
-   Foundation
-   ========================================================================== */
-
-@import "../components/foundation/scss/foundation/variables";
-@import "../components/foundation/scss/foundation/components/global";
-@import "../components/foundation/scss/foundation/components/grid";
-@import "../components/foundation/scss/foundation/components/visibility";
-
 
 /* ==========================================================================
    BASE STYLES
@@ -29,3 +20,9 @@
 /* ==========================================================================
    MODULES STYLES
    ========================================================================== */
+
+
+   /* ==========================================================================
+   CUSTOM STYLES
+   ========================================================================== */
+   @import "custom/memory-game";
