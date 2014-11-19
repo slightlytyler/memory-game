@@ -1,0 +1,60 @@
+.memory-game ul.cards {
+  margin: {
+    top: 42px;
+    bottom: 0;
+  }
+
+  li {
+    position: relative;
+
+    @include span-columns(1 of 4);
+    @include omega(4n);
+
+    margin-bottom: 32px;
+
+    perspective: 1000;
+    transition: transform .4s ease-in-out;
+
+    &.flipped {
+      img.card--back { transform: rotateY(180deg); }
+      .card--front__container { transform: rotateY(0deg); }
+    }
+
+    &.matched { 
+      transform: scale(0,0);
+    }
+
+    &.locked { pointer-events: none; }
+
+    img.card--back, .card--front__container {
+      width: 100%;
+      border: 5px solid $mcguire-green--dark;
+
+      transform-style: preserve-3d;
+      transition: all .4s ease-in-out;
+      backface-visibility: hidden;
+
+      box-sizing: content-box;
+    }
+
+    .card--front__container {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      height: 0;
+      padding-bottom: 100%;
+      background-color: white;
+
+      transform: rotateY(180deg);
+    }
+
+    img.card--front {
+      position: absolute;
+      width: 40%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

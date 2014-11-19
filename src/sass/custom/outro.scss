@@ -1,0 +1,31 @@
+.memory-game section.outro{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -65%);
+  width: 100%;
+  
+  span.thank-you { font-size: 124px; }
+
+  p { margin-bottom: 72px; }
+
+  ul.charities {
+    list-style: none;
+    font-size: 12px;
+
+    max-width: 100%;
+    margin-bottom: 42px;
+
+    li {
+      @include span-columns(1 of 3);
+      @include omega(3n);
+      margin-bottom: 6px;
+
+      white-space: nowrap;
+      text-align: left;
+    }
+  }
+
+  span.blessing { font-size: 24px; }
+}

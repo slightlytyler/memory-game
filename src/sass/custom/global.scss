@@ -1,0 +1,21 @@
+$mcguire-green: #5b8f22;
+$mcguire-green--dark: #325b2c;
+
+.memory-game {
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-family: 'PT Sans Narrow', sans-serif;
+
+  .container { 
+    @include outer-container; 
+    position: relative;
+  }
+}

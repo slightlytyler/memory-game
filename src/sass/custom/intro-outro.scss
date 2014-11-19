@@ -1,0 +1,20 @@
+ .memory-game section.intro, section.outro {
+  display: block;
+  margin: 0 auto;
+
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 1.5;
+
+  &.main {
+    position: fixed;
+    font-size: 42px;
+
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  span{ display: block; }
+}

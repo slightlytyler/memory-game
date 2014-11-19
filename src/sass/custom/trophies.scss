@@ -1,0 +1,23 @@
+.memory-game ul.trophies { 
+  position: fixed;
+  left: 0;
+  bottom: 82px;
+  width: 100%;
+
+  text-align: center;
+
+  padding: 0;
+  margin: 0;
+
+  li { 
+    display: inline-block;
+    margin-right: 24px;
+
+    width: 100%;
+    max-width: 60px;
+
+    animation: pop .4s ease-in-out;
+
+    img { width: 100%; }
+  }
+}

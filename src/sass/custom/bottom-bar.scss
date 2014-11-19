@@ -1,0 +1,31 @@
+.memory-game section.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 86px;
+
+  background-color: $mcguire-green;
+
+  .container { height: 100%; }
+
+  img.logo, section.playback-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  img.logo {
+    width: 300px;
+
+    left: 0;
+  }
+
+  section.playback-controls { right: 0; }
+
+  button {
+    background: none;
+    color: white;
+    border: none;
+  }
+}
