@@ -4,6 +4,8 @@
   "dependencies": {
     "jquery": "latest",
     "modernizr": "latest",
-    "foundation": "latest"
+    "foundation": "latest",
+    "bourbon": "~4.0.2",
+    "neat": "~1.7.0"
   }
 }

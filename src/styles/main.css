@@ -2,6 +2,27 @@
    VENDOR STYLES
    ========================================================================== */
 
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+
+/* line 2, ../components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+
+html {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 7, ../components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 /*
    Normalize
    ========================================================================== */
@@ -552,22 +573,88 @@ CUSTOM STYLES
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
-/* line 12, ../sass/custom/memory-game.scss */
+/* line 14, ../sass/custom/memory-game.scss */
 
-.memory-game section[class^="intro"] {
+.memory-game .container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* line 15, ../components/bourbon/dist/addons/_clearfix.scss */
+
+.memory-game .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 19, ../sass/custom/memory-game.scss */
+
+.memory-game section.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 86px;
+  background-color: #5b8f22;
+}
+
+/* line 29, ../sass/custom/memory-game.scss */
+
+.memory-game section.bottom-bar .container {
+  height: 100%;
+}
+
+/* line 31, ../sass/custom/memory-game.scss */
+
+.memory-game section.bottom-bar img.logo,
+.memory-game section.bottom-bar section.playback-controls {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 36, ../sass/custom/memory-game.scss */
+
+.memory-game section.bottom-bar img.logo {
+  width: 300px;
+  left: 0;
+}
+
+/* line 42, ../sass/custom/memory-game.scss */
+
+.memory-game section.bottom-bar section.playback-controls {
+  right: 0;
+}
+
+/* line 44, ../sass/custom/memory-game.scss */
+
+.memory-game section.bottom-bar button {
+  background: none;
+  color: white;
+  border: none;
+}
+
+/* line 51, ../sass/custom/memory-game.scss */
+
+.memory-game section.intro {
   display: block;
   margin: 0 auto;
-  font-family: 'PT Sans Narrow', sans-serif;
   color: white;
   text-align: center;
   letter-spacing: 5px;
 }
 
-/* line 21, ../sass/custom/memory-game.scss */
+/* line 59, ../sass/custom/memory-game.scss */
 
-.memory-game section[class^="intro"][class*="--main"] {
+.memory-game section.intro.main {
   position: fixed;
   font-size: 42px;
   top: 40%;
@@ -577,16 +664,15 @@ CUSTOM STYLES
   transform: translate(-50%, -50%);
 }
 
-/* line 30, ../sass/custom/memory-game.scss */
+/* line 68, ../sass/custom/memory-game.scss */
 
-.memory-game section[class^="intro"] span {
+.memory-game section.intro span {
   display: block;
 }
 
-/* line 32, ../sass/custom/memory-game.scss */
+/* line 70, ../sass/custom/memory-game.scss */
 
 .memory-game .game,
-.memory-game .outro,
-.memory-game .bottom-bar {
+.memory-game .outro {
   display: none;
 }
