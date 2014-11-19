@@ -12,7 +12,9 @@ function memoryGameIntro() {
 function memoryGameOutro() {
   $('.memory-game .game .intro').show().fadeOut(400);
 
-  $('.memory-game .outro').hide().fadeIn(400);
+  window.setTimeout(function(){
+      $('.memory-game .outro').hide().fadeIn(400);
+  }, 400);
 }
 
 function memoryGameReset() {
