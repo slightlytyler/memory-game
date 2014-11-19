@@ -29,7 +29,7 @@
             });
 
             function checkMatch() {
-                var allCards = $('ul.cards li');
+                var allCards = $('ul.cards li:not(.matched)');
                 var flippedCards = $('ul.cards li.flipped:not(.matched)');
 
                 if(flippedCards.size() >= 2){
@@ -48,7 +48,6 @@
                         }, 700);
 
                         window.setTimeout(function(){
-                            flippedCards.remove();
 
                             if(allCards.size() <= 2) {
                                 isWinner()
@@ -71,6 +70,7 @@
 
             function isWinner() {
                 alert('winner');
+                memoryGameOutro();
             }
         }
     });
