@@ -833,19 +833,31 @@ CUSTOM STYLES
   width: 100%;
 }
 
-/* line 170, ../sass/custom/memory-game.scss */
+/* line 168, ../sass/custom/memory-game.scss */
+
+.memory-game section.outro {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -65%);
+  -ms-transform: translate(-50%, -65%);
+  transform: translate(-50%, -65%);
+  width: 100%;
+}
+
+/* line 176, ../sass/custom/memory-game.scss */
 
 .memory-game section.outro span.thank-you {
   font-size: 124px;
 }
 
-/* line 172, ../sass/custom/memory-game.scss */
+/* line 178, ../sass/custom/memory-game.scss */
 
 .memory-game section.outro p {
   margin-bottom: 72px;
 }
 
-/* line 174, ../sass/custom/memory-game.scss */
+/* line 180, ../sass/custom/memory-game.scss */
 
 .memory-game section.outro ul.charities {
   list-style: none;
@@ -854,7 +866,7 @@ CUSTOM STYLES
   margin-bottom: 42px;
 }
 
-/* line 181, ../sass/custom/memory-game.scss */
+/* line 187, ../sass/custom/memory-game.scss */
 
 .memory-game section.outro ul.charities li {
   float: left;
@@ -884,20 +896,20 @@ CUSTOM STYLES
   clear: left;
 }
 
-/* line 191, ../sass/custom/memory-game.scss */
+/* line 197, ../sass/custom/memory-game.scss */
 
 .memory-game section.outro span.blessing {
   font-size: 24px;
 }
 
 @-webkit-keyframes pop {
-  /* line 196, ../sass/custom/memory-game.scss */
+  /* line 202, ../sass/custom/memory-game.scss */
   from {
     -webkit-transform: scale(0, 0);
     transform: scale(0, 0);
   }
 
-  /* line 197, ../sass/custom/memory-game.scss */
+  /* line 203, ../sass/custom/memory-game.scss */
   to {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
@@ -905,14 +917,14 @@ CUSTOM STYLES
 }
 
 @keyframes pop {
-  /* line 196, ../sass/custom/memory-game.scss */
+  /* line 202, ../sass/custom/memory-game.scss */
   from {
     -webkit-transform: scale(0, 0);
     -ms-transform: scale(0, 0);
     transform: scale(0, 0);
   }
 
-  /* line 197, ../sass/custom/memory-game.scss */
+  /* line 203, ../sass/custom/memory-game.scss */
   to {
     -webkit-transform: scale(1, 1);
     -ms-transform: scale(1, 1);

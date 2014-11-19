@@ -14,3 +14,9 @@ function memoryGameOutro() {
 
   $('.memory-game .outro').hide().fadeIn(400);
 }
+
+function memoryGameReset() {
+  $('.memory-game .game .intro').hide()
+
+  $('.memory-game .outro').show()
+}

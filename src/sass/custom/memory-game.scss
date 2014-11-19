@@ -166,6 +166,12 @@ $mcguire-green--dark: #325b2c;
   }
 
   section.outro{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -65%);
+    width: 100%;
     
     span.thank-you { font-size: 124px; }
 

@@ -20,23 +20,27 @@
     $.extend(Plugin.prototype, {
         init: function () {
             // Randomize cards
-            $('ul.cards').randomizeList();
+            $('.memory-game ul.cards').randomizeList();
 
-            $('ul.cards li').bind( "click", function() {
+            $('.memory-game ul.cards li').bind( "click", function() {
 
               $(this).addClass('flipped');
               checkMatch();
             });
 
+            $('#memory-game-reset').bind( "click", function() {
+                memoryGameReset();
+            });
+
             function checkMatch() {
-                var allCards = $('ul.cards li:not(.matched)');
-                var flippedCards = $('ul.cards li.flipped:not(.matched)');
+                var unMatchedCards = $('.memory-game ul.cards li:not(.matched)');
+                var flippedCards = $('.memory-game ul.cards li.flipped:not(.matched)');
 
                 if(flippedCards.size() >= 2){
                     var cardOne = $(flippedCards[0]);
                     var cardTwo = $(flippedCards[1]);
 
-                    allCards.addClass('locked');
+                    unMatchedCards.addClass('locked');
 
                     if(cardOne.data('card-type') == cardTwo.data('card-type')) {
                         window.setTimeout(function(){
@@ -44,12 +48,12 @@
 
                             addTrophy(cardOne.data('card-type'))
 
-                            allCards.removeClass('locked');
+                            unMatchedCards.removeClass('locked');
                         }, 700);
 
                         window.setTimeout(function(){
 
-                            if(allCards.size() <= 2) {
+                            if(unMatchedCards.size() <= 2) {
                                 isWinner()
                             }
                         }, 1100);
@@ -57,20 +61,48 @@
                          window.setTimeout(function(){
                             flippedCards.removeClass('flipped');
 
-                            allCards.removeClass('locked');
+                            unMatchedCards.removeClass('locked');
                         }, 700);
                     }
                 }
             }
 
             function addTrophy(type) {
-                var trophyCase = $('ul.trophies');
+                var trophyCase = $('.memory-game ul.trophies');
+
                 trophyCase.append('<li data-card-type="' + type + '"><img class="card--front" src="images/gift-' + type + '.png" /></li>')
             }
 
             function isWinner() {
-                alert('winner');
                 memoryGameOutro();
+            }
+
+            function memoryGameReset() {
+                var cardsContainer = $('.memory-game ul.cards');
+                var allCards = $('.memory-game ul.cards li');
+                var trophyCase = $('.memory-game ul.trophies');
+                var intro = $('.memory-game .game .intro');
+                var outro = $('.memory-game .outro');
+
+                cardsContainer.show().fadeOut(150);
+                trophyCase.show().fadeOut(150);
+                outro.show().fadeOut(150);
+
+
+                window.setTimeout(function(){
+                    trophyCase.contents().remove();
+                    $('ul.cards').randomizeList();
+
+                    allCards.removeClass('flipped');
+                    allCards.removeClass('matched');
+                }, 150);
+
+                window.setTimeout(function(){
+                    cardsContainer.hide().fadeIn(400);
+                    trophyCase.hide().fadeIn(400);
+                    intro.hide().fadeIn(400);
+
+                }, 400);
             }
         }
     });
