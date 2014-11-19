@@ -94,11 +94,18 @@ $mcguire-green--dark: #325b2c;
         margin-bottom: 32px;
 
         perspective: 1000;
+        transition: transform .4s ease-in-out;
 
         &.flipped {
           img.card--back { transform: rotateY(180deg); }
           .card--front__container { transform: rotateY(0deg); }
         }
+
+        &.matched { 
+          transform: scale(0,0);
+        }
+
+        &.locked { pointer-events: none; }
 
         img.card--back, .card--front__container {
           width: 100%;
@@ -134,8 +141,15 @@ $mcguire-green--dark: #325b2c;
     }
 
     ul.trophies { 
-      margin: 0;
+      position: fixed;
+      left: 0;
+      bottom: 82px;
+      width: 100%;
+
       text-align: center;
+
+      padding: 0;
+      margin: 0;
 
       li { 
         display: inline-block;
@@ -148,8 +162,12 @@ $mcguire-green--dark: #325b2c;
       }
     }
   }
+
+  section.outro{
+    &.hidden { display: none;}
+  }
 }
 
 
 // TEMP
-.intro.main, .outro, { display: none !important; }
+.intro.main, { display: none !important; }

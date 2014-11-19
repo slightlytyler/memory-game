@@ -1,2 +1,3 @@
-(function( ){
-})( );
+$(window).load(function(){
+  $('.game').memoryGame();
+});

@@ -704,6 +704,9 @@ CUSTOM STYLES
   -webkit-perspective: 1000;
   -ms-perspective: 1000;
   perspective: 1000;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -ms-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
 }
 
 /* line 85, ../components/neat/app/assets/stylesheets/grid/_span-columns.scss */
@@ -724,7 +727,7 @@ CUSTOM STYLES
   clear: left;
 }
 
-/* line 99, ../sass/custom/memory-game.scss */
+/* line 100, ../sass/custom/memory-game.scss */
 
 .memory-game section.game ul.cards li.flipped img.card--back {
   -webkit-transform: rotateY(180deg);
@@ -732,7 +735,7 @@ CUSTOM STYLES
   transform: rotateY(180deg);
 }
 
-/* line 100, ../sass/custom/memory-game.scss */
+/* line 101, ../sass/custom/memory-game.scss */
 
 .memory-game section.game ul.cards li.flipped .card--front__container {
   -webkit-transform: rotateY(0deg);
@@ -740,7 +743,21 @@ CUSTOM STYLES
   transform: rotateY(0deg);
 }
 
-/* line 103, ../sass/custom/memory-game.scss */
+/* line 104, ../sass/custom/memory-game.scss */
+
+.memory-game section.game ul.cards li.matched {
+  -webkit-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+
+/* line 108, ../sass/custom/memory-game.scss */
+
+.memory-game section.game ul.cards li.locked {
+  pointer-events: none;
+}
+
+/* line 110, ../sass/custom/memory-game.scss */
 
 .memory-game section.game ul.cards li img.card--back,
 .memory-game section.game ul.cards li .card--front__container {
@@ -758,7 +775,7 @@ CUSTOM STYLES
   box-sizing: content-box;
 }
 
-/* line 114, ../sass/custom/memory-game.scss */
+/* line 121, ../sass/custom/memory-game.scss */
 
 .memory-game section.game ul.cards li .card--front__container {
   position: absolute;
@@ -772,7 +789,7 @@ CUSTOM STYLES
   transform: rotateY(180deg);
 }
 
-/* line 126, ../sass/custom/memory-game.scss */
+/* line 133, ../sass/custom/memory-game.scss */
 
 .memory-game section.game ul.cards li img.card--front {
   position: absolute;
@@ -784,14 +801,19 @@ CUSTOM STYLES
   transform: translate(-50%, -50%);
 }
 
-/* line 136, ../sass/custom/memory-game.scss */
+/* line 143, ../sass/custom/memory-game.scss */
 
 .memory-game section.game ul.trophies {
-  margin: 0;
+  position: fixed;
+  left: 0;
+  bottom: 82px;
+  width: 100%;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
-/* line 140, ../sass/custom/memory-game.scss */
+/* line 154, ../sass/custom/memory-game.scss */
 
 .memory-game section.game ul.trophies li {
   display: inline-block;
@@ -800,15 +822,20 @@ CUSTOM STYLES
   max-width: 60px;
 }
 
-/* line 147, ../sass/custom/memory-game.scss */
+/* line 161, ../sass/custom/memory-game.scss */
 
 .memory-game section.game ul.trophies li img {
   width: 100%;
 }
 
-/* line 155, ../sass/custom/memory-game.scss */
+/* line 167, ../sass/custom/memory-game.scss */
 
-.intro.main,
-.outro {
+.memory-game section.outro.hidden {
+  display: none;
+}
+
+/* line 173, ../sass/custom/memory-game.scss */
+
+.intro.main {
   display: none !important;
 }
