@@ -651,7 +651,8 @@ CUSTOM STYLES
 
 /* line 54, ../sass/custom/memory-game.scss */
 
-.memory-game section.intro {
+.memory-game section.intro,
+.memory-game section.outro {
   display: block;
   margin: 0 auto;
   color: white;
@@ -662,7 +663,8 @@ CUSTOM STYLES
 
 /* line 63, ../sass/custom/memory-game.scss */
 
-.memory-game section.intro.main {
+.memory-game section.intro.main,
+.memory-game section.outro.main {
   position: fixed;
   font-size: 42px;
   top: 40%;
@@ -674,7 +676,8 @@ CUSTOM STYLES
 
 /* line 72, ../sass/custom/memory-game.scss */
 
-.memory-game section.intro span {
+.memory-game section.intro span,
+.memory-game section.outro span {
   display: block;
 }
 
@@ -830,20 +833,71 @@ CUSTOM STYLES
   width: 100%;
 }
 
-/* line 169, ../sass/custom/memory-game.scss */
+/* line 170, ../sass/custom/memory-game.scss */
 
-.memory-game section.outro.hidden {
-  display: none;
+.memory-game section.outro span.thank-you {
+  font-size: 124px;
+}
+
+/* line 172, ../sass/custom/memory-game.scss */
+
+.memory-game section.outro p {
+  margin-bottom: 72px;
+}
+
+/* line 174, ../sass/custom/memory-game.scss */
+
+.memory-game section.outro ul.charities {
+  list-style: none;
+  font-size: 12px;
+  max-width: 100%;
+  margin-bottom: 42px;
+}
+
+/* line 181, ../sass/custom/memory-game.scss */
+
+.memory-game section.outro ul.charities li {
+  float: left;
+  display: block;
+  margin-right: 10.1484%;
+  width: 26.56773%;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+/* line 85, ../components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+
+.memory-game section.outro ul.charities li:last-child {
+  margin-right: 0;
+}
+
+/* line 82, ../components/neat/app/assets/stylesheets/grid/_omega.scss */
+
+.memory-game section.outro ul.charities li:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* line 87, ../components/neat/app/assets/stylesheets/grid/_omega.scss */
+
+.memory-game section.outro ul.charities li:nth-child(3n+1) {
+  clear: left;
+}
+
+/* line 191, ../sass/custom/memory-game.scss */
+
+.memory-game section.outro span.blessing {
+  font-size: 24px;
 }
 
 @-webkit-keyframes pop {
-  /* line 174, ../sass/custom/memory-game.scss */
+  /* line 196, ../sass/custom/memory-game.scss */
   from {
     -webkit-transform: scale(0, 0);
     transform: scale(0, 0);
   }
 
-  /* line 175, ../sass/custom/memory-game.scss */
+  /* line 197, ../sass/custom/memory-game.scss */
   to {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
@@ -851,14 +905,14 @@ CUSTOM STYLES
 }
 
 @keyframes pop {
-  /* line 174, ../sass/custom/memory-game.scss */
+  /* line 196, ../sass/custom/memory-game.scss */
   from {
     -webkit-transform: scale(0, 0);
     -ms-transform: scale(0, 0);
     transform: scale(0, 0);
   }
 
-  /* line 175, ../sass/custom/memory-game.scss */
+  /* line 197, ../sass/custom/memory-game.scss */
   to {
     -webkit-transform: scale(1, 1);
     -ms-transform: scale(1, 1);

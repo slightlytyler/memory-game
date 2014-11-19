@@ -51,7 +51,7 @@ $mcguire-green--dark: #325b2c;
     }
   }
 
-  section.intro {
+  section.intro, section.outro {
     display: block;
     margin: 0 auto;
 
@@ -166,7 +166,29 @@ $mcguire-green--dark: #325b2c;
   }
 
   section.outro{
-    &.hidden { display: none;}
+    
+    span.thank-you { font-size: 124px; }
+
+    p { margin-bottom: 72px; }
+
+    ul.charities {
+      list-style: none;
+      font-size: 12px;
+
+      max-width: 100%;
+      margin-bottom: 42px;
+
+      li {
+        @include span-columns(1 of 3);
+        @include omega(3n);
+        margin-bottom: 6px;
+
+        white-space: nowrap;
+        text-align: left;
+      }
+    }
+
+    span.blessing { font-size: 24px; }
   }
 }
 
