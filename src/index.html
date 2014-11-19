@@ -25,6 +25,7 @@
 
         <!-- build:js js/main.min.js -->
         <script src="js/plugins/randomize-list.js"></script>
+        <script src="js/plugins/memory-game-animations.js"></script>
         <script src="js/plugins/memory-game.js"></script>
         <script src="js/main.js"></script>
         <!-- endbuild -->
@@ -42,7 +43,7 @@
 
 
         <div id="page" class="memory-game">
-            <section class="intro main">
+            <section style="display: none;" class="intro main">
                 <span>Joy in the</span>
                 <span>gift of giving</span>
                 <span>is the spirit</span>
@@ -115,21 +116,6 @@
                 </ul>
 
                 <ul class="trophies">
-                    <li data-card-type="a">
-                        <img class="card--front" src="images/gift-a.png" />
-                    </li>
-
-                    <li data-card-type="b">
-                        <img class="card--front" src="images/gift-b.png" />
-                    </li>
-
-                    <li data-card-type="c">
-                        <img class="card--front" src="images/gift-c.png" />
-                    </li>
-
-                    <li data-card-type="d">
-                        <img class="card--front" src="images/gift-d.png" />
-                    </li>
                 </ul>
             </section>
 
@@ -167,7 +153,7 @@
             <section class="bottom-bar">
                 <div class="container">
                     <img class="logo" src="images/logo-white.png">
-                    <section class="playback-controls">
+                    <section style="display: none;" class="playback-controls">
                         <button>mute</button>
                         <button>volume</button>
                         <button id="replay">REPLAY</button>

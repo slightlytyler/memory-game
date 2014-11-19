@@ -42,6 +42,8 @@
                         window.setTimeout(function(){
                             flippedCards.addClass('matched');
 
+                            addTrophy(cardOne.data('card-type'))
+
                             allCards.removeClass('locked');
                         }, 700);
 
@@ -60,6 +62,11 @@
                         }, 700);
                     }
                 }
+            }
+
+            function addTrophy(type) {
+                var trophyCase = $('ul.trophies');
+                trophyCase.append('<li data-card-type="' + type + '"><img class="card--front" src="images/gift-' + type + '.png" /></li>')
             }
 
             function isWinner() {

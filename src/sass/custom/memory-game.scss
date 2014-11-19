@@ -158,6 +158,8 @@ $mcguire-green--dark: #325b2c;
         width: 100%;
         max-width: 60px;
 
+        animation: pop .4s ease-in-out;
+
         img { width: 100%; }
       }
     }
@@ -168,6 +170,7 @@ $mcguire-green--dark: #325b2c;
   }
 }
 
-
-// TEMP
-.intro.main, { display: none !important; }
+@keyframes pop {
+  from { transform: scale(0,0); }
+  to { transform: scale(1,1); }
+}

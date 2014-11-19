@@ -820,22 +820,48 @@ CUSTOM STYLES
   margin-right: 24px;
   width: 100%;
   max-width: 60px;
+  -webkit-animation: pop .4s ease-in-out;
+  animation: pop .4s ease-in-out;
 }
 
-/* line 161, ../sass/custom/memory-game.scss */
+/* line 163, ../sass/custom/memory-game.scss */
 
 .memory-game section.game ul.trophies li img {
   width: 100%;
 }
 
-/* line 167, ../sass/custom/memory-game.scss */
+/* line 169, ../sass/custom/memory-game.scss */
 
 .memory-game section.outro.hidden {
   display: none;
 }
 
-/* line 173, ../sass/custom/memory-game.scss */
+@-webkit-keyframes pop {
+  /* line 174, ../sass/custom/memory-game.scss */
+  from {
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
 
-.intro.main {
-  display: none !important;
+  /* line 175, ../sass/custom/memory-game.scss */
+  to {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes pop {
+  /* line 174, ../sass/custom/memory-game.scss */
+  from {
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+
+  /* line 175, ../sass/custom/memory-game.scss */
+  to {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
 }
