@@ -555,6 +555,13 @@ th {
    BASE STYLES
    ========================================================================== */
 
+/* line 1, ../sass/base/_global.scss */
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* ==========================================================================
    MODULES STYLES
    ========================================================================== */
@@ -563,7 +570,7 @@ th {
 CUSTOM STYLES
 ========================================================================== */
 
-/* line 1, ../sass/custom/memory-game.scss */
+/* line 4, ../sass/custom/memory-game.scss */
 
 .memory-game {
   width: 100vw;
@@ -576,7 +583,7 @@ CUSTOM STYLES
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
-/* line 14, ../sass/custom/memory-game.scss */
+/* line 17, ../sass/custom/memory-game.scss */
 
 .memory-game .container {
   max-width: 68em;
@@ -593,7 +600,7 @@ CUSTOM STYLES
   clear: both;
 }
 
-/* line 19, ../sass/custom/memory-game.scss */
+/* line 22, ../sass/custom/memory-game.scss */
 
 .memory-game section.bottom-bar {
   position: fixed;
@@ -604,13 +611,13 @@ CUSTOM STYLES
   background-color: #5b8f22;
 }
 
-/* line 29, ../sass/custom/memory-game.scss */
+/* line 32, ../sass/custom/memory-game.scss */
 
 .memory-game section.bottom-bar .container {
   height: 100%;
 }
 
-/* line 31, ../sass/custom/memory-game.scss */
+/* line 34, ../sass/custom/memory-game.scss */
 
 .memory-game section.bottom-bar img.logo,
 .memory-game section.bottom-bar section.playback-controls {
@@ -621,20 +628,20 @@ CUSTOM STYLES
   transform: translateY(-50%);
 }
 
-/* line 36, ../sass/custom/memory-game.scss */
+/* line 39, ../sass/custom/memory-game.scss */
 
 .memory-game section.bottom-bar img.logo {
   width: 300px;
   left: 0;
 }
 
-/* line 42, ../sass/custom/memory-game.scss */
+/* line 45, ../sass/custom/memory-game.scss */
 
 .memory-game section.bottom-bar section.playback-controls {
   right: 0;
 }
 
-/* line 44, ../sass/custom/memory-game.scss */
+/* line 47, ../sass/custom/memory-game.scss */
 
 .memory-game section.bottom-bar button {
   background: none;
@@ -642,7 +649,7 @@ CUSTOM STYLES
   border: none;
 }
 
-/* line 51, ../sass/custom/memory-game.scss */
+/* line 54, ../sass/custom/memory-game.scss */
 
 .memory-game section.intro {
   display: block;
@@ -650,9 +657,10 @@ CUSTOM STYLES
   color: white;
   text-align: center;
   letter-spacing: 5px;
+  line-height: 1.5;
 }
 
-/* line 59, ../sass/custom/memory-game.scss */
+/* line 63, ../sass/custom/memory-game.scss */
 
 .memory-game section.intro.main {
   position: fixed;
@@ -664,15 +672,143 @@ CUSTOM STYLES
   transform: translate(-50%, -50%);
 }
 
-/* line 68, ../sass/custom/memory-game.scss */
+/* line 72, ../sass/custom/memory-game.scss */
 
 .memory-game section.intro span {
   display: block;
 }
 
-/* line 70, ../sass/custom/memory-game.scss */
+/* line 76, ../sass/custom/memory-game.scss */
 
-.memory-game .game,
-.memory-game .outro {
-  display: none;
+.memory-game section.game .intro {
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+/* line 82, ../sass/custom/memory-game.scss */
+
+.memory-game section.game ul.cards {
+  margin-top: 42px;
+  margin-bottom: 0;
+}
+
+/* line 88, ../sass/custom/memory-game.scss */
+
+.memory-game section.game ul.cards li {
+  position: relative;
+  float: left;
+  display: block;
+  margin-right: 7.42297%;
+  width: 19.43277%;
+  margin-bottom: 32px;
+  -webkit-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
+
+/* line 85, ../components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+
+.memory-game section.game ul.cards li:last-child {
+  margin-right: 0;
+}
+
+/* line 82, ../components/neat/app/assets/stylesheets/grid/_omega.scss */
+
+.memory-game section.game ul.cards li:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* line 87, ../components/neat/app/assets/stylesheets/grid/_omega.scss */
+
+.memory-game section.game ul.cards li:nth-child(4n+1) {
+  clear: left;
+}
+
+/* line 99, ../sass/custom/memory-game.scss */
+
+.memory-game section.game ul.cards li.flipped img.card--back {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* line 100, ../sass/custom/memory-game.scss */
+
+.memory-game section.game ul.cards li.flipped .card--front__container {
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+/* line 103, ../sass/custom/memory-game.scss */
+
+.memory-game section.game ul.cards li img.card--back,
+.memory-game section.game ul.cards li .card--front__container {
+  width: 100%;
+  border: 5px solid #325b2c;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 114, ../sass/custom/memory-game.scss */
+
+.memory-game section.game ul.cards li .card--front__container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  padding-bottom: 100%;
+  background-color: white;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* line 126, ../sass/custom/memory-game.scss */
+
+.memory-game section.game ul.cards li img.card--front {
+  position: absolute;
+  width: 40%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 136, ../sass/custom/memory-game.scss */
+
+.memory-game section.game ul.trophies {
+  margin: 0;
+  text-align: center;
+}
+
+/* line 140, ../sass/custom/memory-game.scss */
+
+.memory-game section.game ul.trophies li {
+  display: inline-block;
+  margin-right: 24px;
+  width: 100%;
+  max-width: 60px;
+}
+
+/* line 147, ../sass/custom/memory-game.scss */
+
+.memory-game section.game ul.trophies li img {
+  width: 100%;
+}
+
+/* line 155, ../sass/custom/memory-game.scss */
+
+.intro.main,
+.outro {
+  display: none !important;
 }

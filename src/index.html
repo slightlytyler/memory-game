@@ -21,8 +21,7 @@
 
         <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="components/jquery/dist/jquery.js"></script>
 
         <!-- build:js js/main.min.js -->
         <script src="js/main.js"></script>
@@ -48,28 +47,87 @@
                 <span>of the holiday season.</span>
             </section>
 
-            <section class="game">
+            <section class="game container">
                 <section class="intro">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices justo eu 
                     rhoncus vestibulum. Suspendisse vel sagittis quam.</p>
                 </section>
 
-                <ul class="cards">
-                    <li data-card-type="a">Card 1</li>
-                    <li data-card-type="a">Card 2</li>
-                    <li data-card-type="b">Card 3</li>
-                    <li data-card-type="b">Card 4</li>
-                    <li data-card-type="c">Card 5</li>
-                    <li data-card-type="c">Card 6</li>
-                    <li data-card-type="d">Card 7</li>
-                    <li data-card-type="d">Card 8</li>
+                <ul class="cards container">
+                    <li data-card-type="a">
+                        <img class="card--back" src="images/card-back.jpg" />
+
+                        <div class="card--front__container">
+                            <img class="card--front" src="images/gift-a.png" />
+                        </div>
+                    </li>
+                    <li data-card-type="a">
+                        <img class="card--back" src="images/card-back.jpg" />
+
+                        <div class="card--front__container">
+                            <img class="card--front" src="images/gift-a.png" />
+                        </div>
+                    </li>
+                    <li data-card-type="b">
+                        <img class="card--back" src="images/card-back.jpg" />
+
+                        <div class="card--front__container">
+                            <img class="card--front" src="images/gift-b.png" />
+                        </div>
+                    </li>
+                    <li data-card-type="b">
+                        <img class="card--back" src="images/card-back.jpg" />
+
+                        <div class="card--front__container">
+                            <img class="card--front" src="images/gift-b.png" />
+                        </div>
+                    </li>
+                    <li data-card-type="c">
+                        <img class="card--back" src="images/card-back.jpg" />
+
+                        <div class="card--front__container">
+                            <img class="card--front" src="images/gift-c.png" />
+                        </div>
+                    </li>
+                    <li data-card-type="c">
+                        <img class="card--back" src="images/card-back.jpg" />
+
+                        <div class="card--front__container">
+                            <img class="card--front" src="images/gift-c.png" />
+                        </div>
+                    </li>
+                    <li data-card-type="d">
+                        <img class="card--back" src="images/card-back.jpg" />
+
+                        <div class="card--front__container">
+                            <img class="card--front" src="images/gift-d.png" />
+                        </div>
+                    </li>
+                    <li data-card-type="d">
+                        <img class="card--back" src="images/card-back.jpg" />
+
+                        <div class="card--front__container">
+                            <img class="card--front" src="images/gift-d.png" />
+                        </div>
+                    </li>
                 </ul>
 
                 <ul class="trophies">
-                    <li data-card-type="a">Present a</li>
-                    <li data-card-type="b">Present a</li>
-                    <li data-card-type="c">Present a</li>
-                    <li data-card-type="d">Present a</li>
+                    <li data-card-type="a">
+                        <img class="card--front" src="images/gift-a.png" />
+                    </li>
+
+                    <li data-card-type="b">
+                        <img class="card--front" src="images/gift-b.png" />
+                    </li>
+
+                    <li data-card-type="c">
+                        <img class="card--front" src="images/gift-c.png" />
+                    </li>
+
+                    <li data-card-type="d">
+                        <img class="card--front" src="images/gift-d.png" />
+                    </li>
                 </ul>
             </section>
 
