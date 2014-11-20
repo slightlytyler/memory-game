@@ -92,6 +92,8 @@
                 window.setTimeout(function(){
                     trophyCase.contents().remove();
                     $('ul.cards').randomizeList();
+                    $('.ie8 ul.cards li').removeClass('last-in-row');
+                    $('.ie8 ul.cards li:nth-child(4n)').addClass('last-in-row');
 
                     allCards.removeClass('flipped');
                     allCards.removeClass('matched');

@@ -17,6 +17,12 @@ $mcguire-green--dark: #325b2c;
   .container { 
     @include outer-container; 
     position: relative;
+
+    max-width: 900px;
+
+    @media screen and ( min-height: 800px ){
+      max-width: 68em;
+    }
   }
 }
 

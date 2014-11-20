@@ -1,4 +1,4 @@
-.memory-game section.outro{
+.memory-game section.outro {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -24,8 +24,20 @@
 
       white-space: nowrap;
       text-align: left;
+
+      &.last-in-row { margin-right: 0; }
     }
   }
 
   span.blessing { font-size: 24px; }
+}
+
+.ie8 .memory-game section.outro {
+  width: 1088px;
+  height: 568px;
+
+  margin: {
+    left: -450px;
+    top: -400px;
+  }
 }
