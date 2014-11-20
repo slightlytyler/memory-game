@@ -580,7 +580,7 @@ CUSTOM STYLES
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Legacy', sans-serif;
 }
 
 /* line 17, ../sass/custom/global.scss */
@@ -613,6 +613,14 @@ CUSTOM STYLES
 
 .ie8 .memory-game > div > img {
   top: 0 !important;
+}
+
+@font-face {
+  font-family: 'Legacy';
+  src: url("../fonts/legacy.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/legacy.eot?#iefix") format("embedded-opentype"), url("../fonts/legacy.ttf") format("truetype");
+  /* Safari, Android, iOS */
 }
 
 @-webkit-keyframes pop {
