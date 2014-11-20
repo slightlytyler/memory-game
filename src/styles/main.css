@@ -600,6 +600,12 @@ CUSTOM STYLES
   clear: both;
 }
 
+/* line 23, ../sass/custom/global.scss */
+
+.ie8 .memory-game > div > img {
+  top: 0 !important;
+}
+
 @-webkit-keyframes pop {
   /* line 2, ../sass/custom/animation.scss */
   from {
@@ -679,14 +685,31 @@ CUSTOM STYLES
   border: none;
 }
 
+/* line 34, ../sass/custom/bottom-bar.scss */
+
+.ie8 .memory-game section.bottom-bar img.logo {
+  width: 300px;
+  height: 35px;
+  margin-top: -18px;
+}
+
+/* line 41, ../sass/custom/bottom-bar.scss */
+
+.ie8 .memory-game section.bottom-bar .playback-controls {
+  width: 180px;
+  height: 25px;
+  margin-top: -13px;
+}
+
 /* line 1, ../sass/custom/cards.scss */
 
 .memory-game ul.cards {
+  padding: 0;
   margin-top: 42px;
   margin-bottom: 0;
 }
 
-/* line 7, ../sass/custom/cards.scss */
+/* line 9, ../sass/custom/cards.scss */
 
 .memory-game ul.cards li {
   position: relative;
@@ -721,23 +744,25 @@ CUSTOM STYLES
   clear: left;
 }
 
-/* line 19, ../sass/custom/cards.scss */
+/* line 21, ../sass/custom/cards.scss */
 
 .memory-game ul.cards li.flipped img.card--back {
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
+  visibility: hidden;
 }
 
-/* line 20, ../sass/custom/cards.scss */
+/* line 25, ../sass/custom/cards.scss */
 
 .memory-game ul.cards li.flipped .card--front__container {
   -webkit-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   transform: rotateY(0deg);
+  visibility: visible;
 }
 
-/* line 23, ../sass/custom/cards.scss */
+/* line 31, ../sass/custom/cards.scss */
 
 .memory-game ul.cards li.matched {
   -webkit-transform: scale(0, 0);
@@ -745,18 +770,23 @@ CUSTOM STYLES
   transform: scale(0, 0);
 }
 
-/* line 27, ../sass/custom/cards.scss */
+/* line 35, ../sass/custom/cards.scss */
 
 .memory-game ul.cards li.locked {
   pointer-events: none;
 }
 
-/* line 29, ../sass/custom/cards.scss */
+/* line 37, ../sass/custom/cards.scss */
+
+.memory-game ul.cards li.last-in-row {
+  margin-right: 0;
+}
+
+/* line 41, ../sass/custom/cards.scss */
 
 .memory-game ul.cards li img.card--back,
 .memory-game ul.cards li .card--front__container {
   width: 100%;
-  border: 5px solid #325b2c;
   -webkit-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -765,11 +795,9 @@ CUSTOM STYLES
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
 }
 
-/* line 40, ../sass/custom/cards.scss */
+/* line 49, ../sass/custom/cards.scss */
 
 .memory-game ul.cards li .card--front__container {
   position: absolute;
@@ -781,9 +809,10 @@ CUSTOM STYLES
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
+  visibility: hidden;
 }
 
-/* line 52, ../sass/custom/cards.scss */
+/* line 62, ../sass/custom/cards.scss */
 
 .memory-game ul.cards li img.card--front {
   position: absolute;
@@ -793,6 +822,7 @@ CUSTOM STYLES
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  visibility: inherit;
 }
 
 /* line 2, ../sass/custom/game.scss */
@@ -816,8 +846,14 @@ section.outro {
 
 /* line 10, ../sass/custom/intro-outro.scss */
 
-.memory-game section.intro.main,
-section.outro.main {
+.memory-game section.intro span,
+section.outro span {
+  display: block;
+}
+
+/* line 1, ../sass/custom/intro--main.scss */
+
+.memory-game .intro.main {
   position: fixed;
   font-size: 42px;
   top: 40%;
@@ -827,17 +863,19 @@ section.outro.main {
   transform: translate(-50%, -50%);
 }
 
-/* line 19, ../sass/custom/intro-outro.scss */
+/* line 10, ../sass/custom/intro--main.scss */
 
-.memory-game section.intro span,
-section.outro span {
-  display: block;
+.ie8 .memory-game .intro.main {
+  width: 426px;
+  margin-left: -213px;
+  height: 252px;
+  margin-top: -126px;
 }
 
 /* line 1, ../sass/custom/outro.scss */
 
 .memory-game section.outro {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -65%);

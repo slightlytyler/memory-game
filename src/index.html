@@ -1,5 +1,11 @@
 <!DOCTYPE html>
+<!--[if lte IE 8]>
+<html class="no-js ie8">
+<![endif]-->
+
+<!--[if gt IE 8]>
 <html class="no-js">
+<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,15 +21,14 @@
 
     </head>
     <body>
-        <!--[if lt IE 9]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
-
-        <script src="components/jquery/dist/jquery.js"></script>
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
         <!-- build:js js/main.min.js -->
+        <script src="js/plugins/viewport-unit-fallback.js"></script>
+        <script src="js/plugins/background-size.js"></script>
+        <script src="js/plugins/ie8-fixes.js"></script>
         <script src="js/plugins/randomize-list.js"></script>
         <script src="js/plugins/memory-game-animations.js"></script>
         <script src="js/plugins/memory-game.js"></script>
@@ -52,8 +57,9 @@
 
             <section style="display: none;" class="game container">
                 <section class="intro">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices justo eu 
-                    rhoncus vestibulum. Suspendisse vel sagittis quam.</p>
+                    <p>There are four matching pairs of gifts. Can you find them all?<br>
+                    Click on a card to reveal a gift, then find it's twin.<br>
+                    Collect all four to open your package.</p>
                 </section>
 
                 <ul class="cards container">

@@ -29,3 +29,19 @@
     border: none;
   }
 }
+
+.ie8 .memory-game section.bottom-bar { 
+  img.logo {
+    width: 300px;
+    height: 35px;
+
+    margin-top: -18px;
+  }
+
+  .playback-controls {
+    width: 180px;
+    height: 25px;
+
+    margin-top: -13px;
+  }
+}

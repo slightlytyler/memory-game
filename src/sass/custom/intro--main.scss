@@ -1,0 +1,16 @@
+.memory-game .intro.main {
+  position: fixed;
+  font-size: 42px;
+
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ie8 .memory-game .intro.main {
+  width: 426px;
+  margin-left: -213px;
+
+  height: 252px;
+  margin-top: -126px;
+}

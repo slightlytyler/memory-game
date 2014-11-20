@@ -1,4 +1,6 @@
 .memory-game ul.cards {
+  padding: 0;
+
   margin: {
     top: 42px;
     bottom: 0;
@@ -16,8 +18,14 @@
     transition: transform .4s ease-in-out;
 
     &.flipped {
-      img.card--back { transform: rotateY(180deg); }
-      .card--front__container { transform: rotateY(0deg); }
+      img.card--back { 
+        transform: rotateY(180deg); 
+        visibility: hidden; 
+      }
+      .card--front__container { 
+        transform: rotateY(0deg);
+        visibility: visible;
+      }
     }
 
     &.matched { 
@@ -26,15 +34,16 @@
 
     &.locked { pointer-events: none; }
 
+    &.last-in-row { 
+      margin-right: 0;
+    }
+
     img.card--back, .card--front__container {
       width: 100%;
-      border: 5px solid $mcguire-green--dark;
 
       transform-style: preserve-3d;
       transition: all .4s ease-in-out;
       backface-visibility: hidden;
-
-      box-sizing: content-box;
     }
 
     .card--front__container {
@@ -47,6 +56,7 @@
       background-color: white;
 
       transform: rotateY(180deg);
+      visibility: hidden;
     }
 
     img.card--front {
@@ -55,6 +65,8 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+
+      visibility: inherit;
     }
   }
 }
