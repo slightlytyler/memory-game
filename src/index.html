@@ -27,6 +27,7 @@
 
         <!-- build:js js/main.min.js -->
         <script src="js/plugins/viewport-unit-fallback.js"></script>
+        <script src="js/plugins/audio-playback.js"></script>
         <script src="js/plugins/background-size.js"></script>
         <script src="js/plugins/ie8-fixes.js"></script>
         <script src="js/plugins/randomize-list.js"></script>
@@ -160,8 +161,7 @@
                 <div class="container">
                     <img class="logo" src="images/logo-white.png">
                     <section style="display: none;" class="playback-controls">
-                        <button>mute</button>
-                        <button>volume</button>
+                        <button id="volume"><img class="mute" src="images/mute.png" /><img class="volume-up" src="images/volume.png" /></button>
                         <button id="memory-game-reset">REPLAY</button>
                     </section>
                 </div>

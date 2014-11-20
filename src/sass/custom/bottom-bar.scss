@@ -27,6 +27,25 @@
     background: none;
     color: white;
     border: none;
+    padding: 0;
+    margin-right: 12px;
+
+    &#volume.muted {
+      img.mute { display: none; }
+
+      img.volume-up { display: inline-block; }
+    }
+
+    &:last-child { margin-right: 0; }
+
+    img { 
+      width: 24px; 
+      transform: translateY(5px);
+
+      &.mute { display: inline-block; }
+
+      &.volume-up { display: none; }
+    }
   }
 }
 

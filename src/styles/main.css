@@ -692,9 +692,50 @@ CUSTOM STYLES
   background: none;
   color: white;
   border: none;
+  padding: 0;
+  margin-right: 12px;
 }
 
 /* line 34, ../sass/custom/bottom-bar.scss */
+
+.memory-game section.bottom-bar button#volume.muted img.mute {
+  display: none;
+}
+
+/* line 36, ../sass/custom/bottom-bar.scss */
+
+.memory-game section.bottom-bar button#volume.muted img.volume-up {
+  display: inline-block;
+}
+
+/* line 39, ../sass/custom/bottom-bar.scss */
+
+.memory-game section.bottom-bar button:last-child {
+  margin-right: 0;
+}
+
+/* line 41, ../sass/custom/bottom-bar.scss */
+
+.memory-game section.bottom-bar button img {
+  width: 24px;
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+/* line 45, ../sass/custom/bottom-bar.scss */
+
+.memory-game section.bottom-bar button img.mute {
+  display: inline-block;
+}
+
+/* line 47, ../sass/custom/bottom-bar.scss */
+
+.memory-game section.bottom-bar button img.volume-up {
+  display: none;
+}
+
+/* line 53, ../sass/custom/bottom-bar.scss */
 
 .ie8 .memory-game section.bottom-bar img.logo {
   width: 300px;
@@ -702,7 +743,7 @@ CUSTOM STYLES
   margin-top: -18px;
 }
 
-/* line 41, ../sass/custom/bottom-bar.scss */
+/* line 60, ../sass/custom/bottom-bar.scss */
 
 .ie8 .memory-game section.bottom-bar .playback-controls {
   width: 180px;
