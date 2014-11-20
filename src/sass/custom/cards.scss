@@ -70,3 +70,17 @@
     }
   }
 }
+
+.ie8 .memory-game ul.cards {
+  li.matched, li.matched .card--front__container { visibility: hidden; }
+
+  img.card--front {
+    width: 84px;
+    height: auto;
+
+    margin: {
+      left: -42px;
+      top: -54px;
+    }
+  }
+}

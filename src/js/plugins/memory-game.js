@@ -84,9 +84,9 @@
                 var intro = $('.memory-game .game .intro');
                 var outro = $('.memory-game .outro');
 
-                cardsContainer.show().fadeOut(150);
-                trophyCase.show().fadeOut(150);
-                outro.show().fadeOut(150);
+                cardsContainer.fadeOut(150);
+                trophyCase.fadeOut(150);
+                outro.fadeOut(150);
 
 
                 window.setTimeout(function(){
@@ -100,8 +100,7 @@
                 window.setTimeout(function(){
                     cardsContainer.hide().fadeIn(400);
                     trophyCase.hide().fadeIn(400);
-                    intro.hide().fadeIn(400);
-
+                    intro.show().fadeIn(400);
                 }, 400);
             }
         }

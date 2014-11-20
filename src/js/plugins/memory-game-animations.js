@@ -18,7 +18,7 @@ function memoryGameOutro() {
 }
 
 function memoryGameReset() {
-  $('.memory-game .game .intro').hide()
+  $('.memory-game .game .intro').hide();
 
-  $('.memory-game .outro').show()
+  $('.memory-game .outro').show();
 }

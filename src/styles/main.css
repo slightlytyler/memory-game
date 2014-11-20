@@ -825,6 +825,22 @@ CUSTOM STYLES
   visibility: inherit;
 }
 
+/* line 75, ../sass/custom/cards.scss */
+
+.ie8 .memory-game ul.cards li.matched,
+.ie8 .memory-game ul.cards li.matched .card--front__container {
+  visibility: hidden;
+}
+
+/* line 77, ../sass/custom/cards.scss */
+
+.ie8 .memory-game ul.cards img.card--front {
+  width: 84px;
+  height: auto;
+  margin-left: -42px;
+  margin-top: -54px;
+}
+
 /* line 2, ../sass/custom/game.scss */
 
 .memory-game section.game .intro {
