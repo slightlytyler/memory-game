@@ -1,6 +1,7 @@
 function ie8Fixes() {
   // Fix the background using background-size.js
   $('.ie8 .memory-game').css({backgroundSize: "cover"});
+  $('.ie8 .fireworks').css({backgroundSize: "cover"});
 
   // No need for selectivizer, just do it manually
   $('.ie8 ul.cards li:nth-child(4n)').addClass('last-in-row');

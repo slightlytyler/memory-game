@@ -13,7 +13,12 @@ function memoryGameOutro() {
 
   window.setTimeout(function(){
       $('.memory-game .outro').hide().fadeIn(400);
+      $('.fireworks').hide().fadeIn(400);
   }, 400);
+
+  window.setTimeout(function(){
+      $('.fireworks').show().fadeOut(400);
+  }, 2000);
 }
 
 function memoryGameReset() {
