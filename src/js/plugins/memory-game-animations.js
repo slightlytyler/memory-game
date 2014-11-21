@@ -1,11 +1,15 @@
 function memoryGameIntro() {
   window.setTimeout(function(){
+      $('.memory-game .intro.main').hide().fadeIn(400)
+  }, 200);
+
+  window.setTimeout(function(){
       $('.memory-game .intro.main').show().fadeOut(400)
-  }, 2100);
+  }, 2700);
 
   window.setTimeout(function(){
       $('.memory-game .game').hide().fadeIn(400);
-  }, 2500);
+  }, 3100);
 }
 
 function memoryGameOutro() {
@@ -18,7 +22,7 @@ function memoryGameOutro() {
 
   window.setTimeout(function(){
       $('.fireworks').show().fadeOut(400);
-  }, 2000);
+  }, 2500);
 }
 
 function memoryGameReset() {

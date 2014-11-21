@@ -1,7 +1,7 @@
 .memory-game section.outro {
   position: fixed;
   left: 50%;
-  top: 35%;
+  top: 37%;
 
   transform: translate(-50%, -50%);
   width: 100%;
@@ -9,8 +9,9 @@
   span.thank-you { font-size: 124px; }
 
   p { 
-    margin-bottom: 4em;
-    font-size: 1.25em;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
   }
 
   ul.charities {
@@ -18,7 +19,7 @@
     font-size: 1em;
 
     max-width: 100%;
-    margin-bottom: 42px;
+    margin-bottom: 2em;
 
     div.row { 
       @include fill-parent();
