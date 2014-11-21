@@ -30,6 +30,9 @@
         <!--[if gt IE 8]>
             <script src="js/plugins/audio-playback.js"></script>
         <![endif]-->
+        <!--[if !IE]><!-->
+            <script src="js/plugins/audio-playback.js"></script>
+        <!--<![endif]-->
         <script src="js/plugins/background-size.js"></script>
         <script src="js/plugins/ie8-fixes.js"></script>
         <script src="js/plugins/randomize-list.js"></script>
@@ -184,7 +187,8 @@
             </section>
 
             <audio loop>
-              <source src="audio/song.mp3" type="audio/mpeg">
+                <source src="audio/song.mp3" type="audio/mpeg">
+                <source src="audio/song.ogg" type="audio/ogg">
             </audio>
         </div>
     </body>
