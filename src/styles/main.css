@@ -570,13 +570,13 @@ th {
 CUSTOM STYLES
 ========================================================================== */
 
-/* line 4, ../sass/custom/global.scss */
+/* line 5, ../sass/custom/global.scss */
 
 html {
   font-size: 12px;
 }
 
-/* line 8, ../sass/custom/global.scss */
+/* line 9, ../sass/custom/global.scss */
 
 .memory-game {
   width: 100vw;
@@ -589,7 +589,7 @@ html {
   font-family: 'Legacy', sans-serif;
 }
 
-/* line 21, ../sass/custom/global.scss */
+/* line 22, ../sass/custom/global.scss */
 
 .memory-game .container {
   max-width: 68em;
@@ -608,14 +608,14 @@ html {
 }
 
 @media screen and (min-height: 800px) {
-  /* line 21, ../sass/custom/global.scss */
+  /* line 22, ../sass/custom/global.scss */
 
   .memory-game .container {
     max-width: 1088px;
   }
 }
 
-/* line 33, ../sass/custom/global.scss */
+/* line 34, ../sass/custom/global.scss */
 
 .ie8 .memory-game > div > img {
   top: 0 !important;
@@ -667,7 +667,7 @@ html {
   left: 0;
   width: 100%;
   height: 86px;
-  background-color: #5b8f22;
+  background-color: #969799;
 }
 
 /* line 11, ../sass/custom/bottom-bar.scss */
