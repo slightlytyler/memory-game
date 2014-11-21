@@ -8,24 +8,29 @@
   
   span.thank-you { font-size: 124px; }
 
-  p { margin-bottom: 72px; }
+  p { 
+    margin-bottom: 4em;
+    font-size: 1.25em;
+  }
 
   ul.charities {
     list-style: none;
-    font-size: 12px;
+    font-size: 1em;
 
     max-width: 100%;
     margin-bottom: 42px;
 
+    div.row { 
+      @include fill-parent();
+      @include row(table);
+
+      margin-bottom: .7em;
+    }
+
     li {
-      @include span-columns(1 of 3);
-      @include omega(3n);
-      margin-bottom: 6px;
+      @include span-columns(1 of 3, table);
 
-      white-space: nowrap;
       text-align: left;
-
-      &.last-in-row { margin-right: 0; }
     }
   }
 

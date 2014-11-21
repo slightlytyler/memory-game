@@ -28,6 +28,7 @@
     color: white;
     border: none;
     padding: 0;
+    font-size: 1.25em;
     margin-right: 12px;
 
     &#volume.muted {
@@ -68,4 +69,5 @@
 .ie8 {
   .playback-controls button { float: right; }
   #volume { display: none; }
+  #memory-game-reset { margin-top: 10px; }
 }
