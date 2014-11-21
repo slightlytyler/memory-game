@@ -1007,6 +1007,7 @@ section.outro span {
 .memory-game .intro.main {
   position: fixed;
   font-size: 5.5em;
+  text-shadow: 0 3px 9px rgba(0, 0, 0, 0.85), 0 0 1px black;
   top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1014,7 +1015,7 @@ section.outro span {
   transform: translate(-50%, -50%);
 }
 
-/* line 10, ../sass/custom/intro--main.scss */
+/* line 11, ../sass/custom/intro--main.scss */
 
 .ie8 .memory-game .intro.main {
   width: 426px;
@@ -1029,19 +1030,21 @@ section.outro span {
   position: fixed;
   left: 50%;
   top: 37%;
+  letter-spacing: 3px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 100%;
 }
 
-/* line 9, ../sass/custom/outro.scss */
+/* line 10, ../sass/custom/outro.scss */
 
 .memory-game section.outro span.thank-you {
   font-size: 9em;
+  text-shadow: 0 3px 9px rgba(0, 0, 0, 0.85), 0 0 1px black;
 }
 
-/* line 11, ../sass/custom/outro.scss */
+/* line 15, ../sass/custom/outro.scss */
 
 .memory-game section.outro p {
   margin-top: 0;
@@ -1049,7 +1052,7 @@ section.outro span {
   font-size: 1.5em;
 }
 
-/* line 17, ../sass/custom/outro.scss */
+/* line 21, ../sass/custom/outro.scss */
 
 .memory-game section.outro ul.charities {
   list-style: none;
@@ -1058,7 +1061,7 @@ section.outro span {
   margin-bottom: 2em;
 }
 
-/* line 24, ../sass/custom/outro.scss */
+/* line 28, ../sass/custom/outro.scss */
 
 .memory-game section.outro ul.charities div.row {
   width: 100%;
@@ -1068,7 +1071,7 @@ section.outro span {
   margin-bottom: .7em;
 }
 
-/* line 31, ../sass/custom/outro.scss */
+/* line 35, ../sass/custom/outro.scss */
 
 .memory-game section.outro ul.charities li {
   display: table-cell;
@@ -1076,13 +1079,13 @@ section.outro span {
   text-align: left;
 }
 
-/* line 38, ../sass/custom/outro.scss */
+/* line 42, ../sass/custom/outro.scss */
 
 .memory-game section.outro span.blessing {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
-/* line 41, ../sass/custom/outro.scss */
+/* line 45, ../sass/custom/outro.scss */
 
 .ie8 .memory-game section.outro {
   width: 1088px;

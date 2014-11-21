@@ -2,11 +2,15 @@
   position: fixed;
   left: 50%;
   top: 37%;
+  letter-spacing: 3px;
 
   transform: translate(-50%, -50%);
   width: 100%;
   
-  span.thank-you { font-size: 9em; }
+  span.thank-you { 
+    font-size: 9em; 
+    text-shadow: 0 3px 9px rgba(0,0,0,.85), 0 0 1px black;
+  }
 
   p { 
     margin-top: 0;
@@ -35,7 +39,7 @@
     }
   }
 
-  span.blessing { font-size: 3em; }
+  span.blessing { font-size: 2.5em; }
 }
 
 .ie8 .memory-game section.outro {
