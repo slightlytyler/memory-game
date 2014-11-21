@@ -1100,8 +1100,33 @@ section.outro span {
   margin-right: 0;
 }
 
-/* line 23, ../sass/custom/trophies.scss */
+/* line 25, ../sass/custom/trophies.scss */
 
-.memory-game ul.trophies li img {
+.memory-game ul.trophies li img.closed,
+.memory-game ul.trophies li img.open {
   width: 100%;
+}
+
+/* line 27, ../sass/custom/trophies.scss */
+
+.memory-game ul.trophies li img.open {
+  display: none;
+}
+
+/* line 33, ../sass/custom/trophies.scss */
+
+.ie8 .memory-game.winner ul.trophies li {
+  max-width: 80px;
+}
+
+/* line 37, ../sass/custom/trophies.scss */
+
+.ie8 .memory-game.winner ul.trophies img.closed {
+  display: none;
+}
+
+/* line 39, ../sass/custom/trophies.scss */
+
+.ie8 .memory-game.winner ul.trophies img.open {
+  display: inline-block;
 }

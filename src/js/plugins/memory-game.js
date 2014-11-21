@@ -69,11 +69,15 @@
 
             function addTrophy(type) {
                 var trophyCase = $('.memory-game ul.trophies');
+                var closedGift = '<img class="card--front closed" src="images/gifts/gift-' + type + '.png" />';
+                var openGift = '<img class="card--front open" src="images/gifts/gift-' + type + '--open.png" />';
 
-                trophyCase.append('<li data-card-type="' + type + '"><img class="card--front" src="images/gift-' + type + '.png" /></li>')
+                trophyCase.append('<li data-card-type="' + type + '">' + closedGift + openGift + '</li>');
             }
 
             function isWinner() {
+                $('.memory-game').addClass('winner');
+
                 memoryGameOutro();
             }
 
@@ -98,6 +102,8 @@
                     allCards.removeClass('flipped');
                     allCards.removeClass('matched');
                 }, 150);
+
+                $('.memory-game').removeClass('winner');
 
                 window.setTimeout(function(){
                     cardsContainer.hide().fadeIn(400);

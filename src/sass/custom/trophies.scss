@@ -20,6 +20,24 @@
 
     &:last-child { margin-right: 0; }
 
-    img { width: 100%; }
+    img { 
+      
+      &.closed, &.open { width: 100%; }
+
+      &.open { display: none; }
+    }
+  }
+}
+
+.ie8 .memory-game.winner ul.trophies { 
+  li { max-width: 80px; }
+
+  img {
+
+    &.closed { display: none; }
+
+    &.open {
+      display: inline-block;
+    }
   }
 }
