@@ -6,6 +6,7 @@
 
   li {
     position: relative;
+    cursor: pointer;
 
     @include span-columns(1 of 4);
     @include omega(4n);

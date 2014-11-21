@@ -5,11 +5,11 @@ function memoryGameIntro() {
 
   window.setTimeout(function(){
       $('.memory-game .intro.main').show().fadeOut(400)
-  }, 2700);
+  }, 3200);
 
   window.setTimeout(function(){
       $('.memory-game .game').hide().fadeIn(400);
-  }, 3100);
+  }, 3600);
 }
 
 function memoryGameOutro() {
