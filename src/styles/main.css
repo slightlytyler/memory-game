@@ -1100,32 +1100,118 @@ section.outro span {
   margin-right: 0;
 }
 
-/* line 25, ../sass/custom/trophies.scss */
+/* line 23, ../sass/custom/trophies.scss */
 
-.memory-game ul.trophies li img.closed,
-.memory-game ul.trophies li img.open {
+.memory-game ul.trophies li section.gift-parts {
+  position: relative;
+}
+
+/* line 26, ../sass/custom/trophies.scss */
+
+.memory-game ul.trophies li section.gift-parts .card__top {
+  position: absolute;
+  left: 0;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -ms-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+}
+
+/* line 32, ../sass/custom/trophies.scss */
+
+.memory-game ul.trophies li section.gift-parts .card__top.a {
+  top: -29px;
+}
+
+/* line 34, ../sass/custom/trophies.scss */
+
+.memory-game ul.trophies li section.gift-parts .card__top.b {
+  top: -24px;
+}
+
+/* line 36, ../sass/custom/trophies.scss */
+
+.memory-game ul.trophies li section.gift-parts .card__top.c {
+  top: -23px;
+  left: -1px;
+}
+
+/* line 41, ../sass/custom/trophies.scss */
+
+.memory-game ul.trophies li section.gift-parts .card__top.d {
+  top: -13px;
+}
+
+/* line 45, ../sass/custom/trophies.scss */
+
+.memory-game ul.trophies li img {
   width: 100%;
 }
 
-/* line 27, ../sass/custom/trophies.scss */
+/* line 48, ../sass/custom/trophies.scss */
 
+.memory-game ul.trophies li img.closed,
 .memory-game ul.trophies li img.open {
   display: none;
 }
 
-/* line 33, ../sass/custom/trophies.scss */
+/* line 57, ../sass/custom/trophies.scss */
+
+.memory-game.winner section.gift-parts .card__top.a {
+  -webkit-transform: translateX(-22px) rotate(-35deg);
+  -ms-transform: translateX(-22px) rotate(-35deg);
+  transform: translateX(-22px) rotate(-35deg);
+}
+
+/* line 59, ../sass/custom/trophies.scss */
+
+.memory-game.winner section.gift-parts .card__top.b {
+  -webkit-transform: translateX(22px) rotate(35deg);
+  -ms-transform: translateX(22px) rotate(35deg);
+  transform: translateX(22px) rotate(35deg);
+}
+
+/* line 61, ../sass/custom/trophies.scss */
+
+.memory-game.winner section.gift-parts .card__top.c {
+  -webkit-transform: translateX(-22px) rotate(-35deg);
+  -ms-transform: translateX(-22px) rotate(-35deg);
+  transform: translateX(-22px) rotate(-35deg);
+}
+
+/* line 63, ../sass/custom/trophies.scss */
+
+.memory-game.winner section.gift-parts .card__top.d {
+  -webkit-transform: translateX(22px) rotate(35deg);
+  -ms-transform: translateX(22px) rotate(35deg);
+  transform: translateX(22px) rotate(35deg);
+}
+
+/* line 69, ../sass/custom/trophies.scss */
+
+.ie8 .memory-game ul.trophies img.closed {
+  display: inline-block;
+}
+
+/* line 71, ../sass/custom/trophies.scss */
+
+.ie8 .memory-game ul.trophies img.card__top,
+.ie8 .memory-game ul.trophies img.card__bottom {
+  display: none;
+}
+
+/* line 76, ../sass/custom/trophies.scss */
 
 .ie8 .memory-game.winner ul.trophies li {
   max-width: 80px;
 }
 
-/* line 37, ../sass/custom/trophies.scss */
+/* line 80, ../sass/custom/trophies.scss */
 
 .ie8 .memory-game.winner ul.trophies img.closed {
   display: none;
 }
 
-/* line 39, ../sass/custom/trophies.scss */
+/* line 82, ../sass/custom/trophies.scss */
 
 .ie8 .memory-game.winner ul.trophies img.open {
   display: inline-block;

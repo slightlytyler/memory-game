@@ -20,24 +20,69 @@
 
     &:last-child { margin-right: 0; }
 
-    img { 
-      
-      &.closed, &.open { width: 100%; }
+    section.gift-parts {
+      position: relative;
 
-      &.open { display: none; }
+      .card__top {
+        position: absolute;
+        left: 0;
+
+        transition: transform .3s ease-in-out;
+
+        &.a { top: -29px; }
+
+        &.b { top: -24px; }
+
+        &.c { 
+          top: -23px; 
+          left: -1px;
+        }
+
+        &.d { top: -13px; }
+      }
+    }
+
+    img { 
+      width: 100%;
+
+      &.closed, &.open { 
+        display: none;
+      }
     }
   }
 }
 
-.ie8 .memory-game.winner ul.trophies { 
-  li { max-width: 80px; }
+.memory-game.winner {
+  section.gift-parts .card__top { 
+    &.a { transform: translateX(-22px) rotate(-35deg); }
 
-  img {
+    &.b { transform: translateX(22px) rotate(35deg); }
 
-    &.closed { display: none; }
+    &.c { transform: translateX(-22px) rotate(-35deg); }
 
-    &.open {
-      display: inline-block;
+    &.d { transform: translateX(22px) rotate(35deg); }
+  }
+}
+
+.ie8 .memory-game {
+  ul.trophies {
+    img.closed { display: inline-block; }
+
+    img.card__top, img.card__bottom { display: none; }
+  }
+
+  &.winner {
+    ul.trophies { 
+      li { max-width: 80px; }
+
+      img {
+
+        &.closed { display: none; }
+
+        &.open {
+          display: inline-block;
+        }
+      }
     }
   }
 }

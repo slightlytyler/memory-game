@@ -71,8 +71,10 @@
                 var trophyCase = $('.memory-game ul.trophies');
                 var closedGift = '<img class="card--front closed" src="images/gifts/gift-' + type + '.png" />';
                 var openGift = '<img class="card--front open" src="images/gifts/gift-' + type + '--open.png" />';
+                var giftTop = '<img class="card__top ' + type + '" src="images/gifts/gift-' + type + '__top.png" />';
+                var giftBottom = '<img class="card__bottom ' + type + '" src="images/gifts/gift-' + type + '__bottom.png" />';
 
-                trophyCase.append('<li data-card-type="' + type + '">' + closedGift + openGift + '</li>');
+                trophyCase.append('<li data-card-type="' + type + '">' + closedGift + openGift + '<section class="gift-parts">' + giftTop + giftBottom + '</section' + '</li>');
             }
 
             function isWinner() {
