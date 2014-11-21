@@ -1,6 +1,10 @@
 $mcguire-green: #5b8f22;
 $mcguire-green--dark: #325b2c;
 
+html {
+  font-size: 12px;
+}
+
 .memory-game {
   width: 100vw;
   height: 100vh;
@@ -21,7 +25,7 @@ $mcguire-green--dark: #325b2c;
     max-width: 900px;
 
     @media screen and ( min-height: 800px ){
-      max-width: 68em;
+      max-width: 1088px;
     }
   }
 }

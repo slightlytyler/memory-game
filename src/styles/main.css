@@ -572,6 +572,12 @@ CUSTOM STYLES
 
 /* line 4, ../sass/custom/global.scss */
 
+html {
+  font-size: 12px;
+}
+
+/* line 8, ../sass/custom/global.scss */
+
 .memory-game {
   width: 100vw;
   height: 100vh;
@@ -583,7 +589,7 @@ CUSTOM STYLES
   font-family: 'Legacy', sans-serif;
 }
 
-/* line 17, ../sass/custom/global.scss */
+/* line 21, ../sass/custom/global.scss */
 
 .memory-game .container {
   max-width: 68em;
@@ -602,14 +608,14 @@ CUSTOM STYLES
 }
 
 @media screen and (min-height: 800px) {
-  /* line 17, ../sass/custom/global.scss */
+  /* line 21, ../sass/custom/global.scss */
 
   .memory-game .container {
-    max-width: 68em;
+    max-width: 1088px;
   }
 }
 
-/* line 29, ../sass/custom/global.scss */
+/* line 33, ../sass/custom/global.scss */
 
 .ie8 .memory-game > div > img {
   top: 0 !important;
@@ -759,6 +765,18 @@ CUSTOM STYLES
   margin-top: -13px;
 }
 
+/* line 69, ../sass/custom/bottom-bar.scss */
+
+.ie8 .playback-controls button {
+  float: right;
+}
+
+/* line 70, ../sass/custom/bottom-bar.scss */
+
+.ie8 #volume {
+  display: none;
+}
+
 /* line 1, ../sass/custom/cards.scss */
 
 .memory-game ul.cards {
@@ -852,9 +870,10 @@ CUSTOM STYLES
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
+  box-shadow: 0 0 25px 7px rgba(0, 0, 0, 0.35);
 }
 
-/* line 45, ../sass/custom/cards.scss */
+/* line 46, ../sass/custom/cards.scss */
 
 .memory-game ul.cards li .card--front__container {
   position: absolute;
@@ -863,14 +882,14 @@ CUSTOM STYLES
   height: 0;
   padding-bottom: 100%;
   background-color: white;
-  border: 5px solid #969799;
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
   visibility: hidden;
+  border: 5px solid #969799;
 }
 
-/* line 59, ../sass/custom/cards.scss */
+/* line 61, ../sass/custom/cards.scss */
 
 .memory-game ul.cards li img.card--front {
   position: absolute;
@@ -883,14 +902,14 @@ CUSTOM STYLES
   visibility: inherit;
 }
 
-/* line 72, ../sass/custom/cards.scss */
+/* line 74, ../sass/custom/cards.scss */
 
 .ie8 .memory-game ul.cards li.matched,
 .ie8 .memory-game ul.cards li.matched .card--front__container {
   visibility: hidden;
 }
 
-/* line 74, ../sass/custom/cards.scss */
+/* line 76, ../sass/custom/cards.scss */
 
 .ie8 .memory-game ul.cards img.card--front {
   width: 60px;
@@ -898,25 +917,25 @@ CUSTOM STYLES
   margin-left: -30px;
 }
 
-/* line 80, ../sass/custom/cards.scss */
+/* line 82, ../sass/custom/cards.scss */
 
 .ie8 .memory-game ul.cards img.card--front.a {
   margin-top: -50px;
 }
 
-/* line 82, ../sass/custom/cards.scss */
+/* line 84, ../sass/custom/cards.scss */
 
 .ie8 .memory-game ul.cards img.card--front.b {
   margin-top: -40px;
 }
 
-/* line 84, ../sass/custom/cards.scss */
+/* line 86, ../sass/custom/cards.scss */
 
 .ie8 .memory-game ul.cards img.card--front.c {
   margin-top: -40px;
 }
 
-/* line 86, ../sass/custom/cards.scss */
+/* line 88, ../sass/custom/cards.scss */
 
 .ie8 .memory-game ul.cards img.card--front.d {
   margin-top: -38px;
@@ -974,10 +993,10 @@ section.outro span {
 .memory-game section.outro {
   position: fixed;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -65%);
-  -ms-transform: translate(-50%, -65%);
-  transform: translate(-50%, -65%);
+  top: 35%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
 }
 
@@ -1048,9 +1067,9 @@ section.outro span {
 
 .ie8 .memory-game section.outro {
   width: 1088px;
-  height: 568px;
+  height: 598px;
   margin-left: -450px;
-  margin-top: -400px;
+  margin-top: -280px;
 }
 
 /* line 1, ../sass/custom/trophies.scss */

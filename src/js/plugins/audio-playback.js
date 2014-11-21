@@ -10,3 +10,9 @@ function audioPlayback() {
     }
   });
 }
+
+$(window).load(function(){
+  $('audio').prop("volume",.7);
+  $('audio')[0].play();
+  audioPlayback();
+});

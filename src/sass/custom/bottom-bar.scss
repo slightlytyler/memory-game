@@ -64,3 +64,8 @@
     margin-top: -13px;
   }
 }
+
+.ie8 {
+  .playback-controls button { float: right; }
+  #volume { display: none; }
+}

@@ -1,9 +1,9 @@
 .memory-game section.outro {
   position: fixed;
   left: 50%;
-  top: 50%;
+  top: 35%;
 
-  transform: translate(-50%, -65%);
+  transform: translate(-50%, -50%);
   width: 100%;
   
   span.thank-you { font-size: 124px; }
@@ -34,10 +34,10 @@
 
 .ie8 .memory-game section.outro {
   width: 1088px;
-  height: 568px;
+  height: 598px;
 
   margin: {
     left: -450px;
-    top: -400px;
+    top: -280px;
   }
 }

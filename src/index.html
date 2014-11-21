@@ -27,7 +27,9 @@
 
         <!-- build:js js/main.min.js -->
         <script src="js/plugins/viewport-unit-fallback.js"></script>
-        <script src="js/plugins/audio-playback.js"></script>
+        <!--[if gt IE 8]>
+            <script src="js/plugins/audio-playback.js"></script>
+        <![endif]-->
         <script src="js/plugins/background-size.js"></script>
         <script src="js/plugins/ie8-fixes.js"></script>
         <script src="js/plugins/randomize-list.js"></script>
