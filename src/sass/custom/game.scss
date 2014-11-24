@@ -2,6 +2,7 @@
   position: relative;
 
   .intro { 
+    position: relative;
     font-size: 1.5em; 
 
     z-index: 1;
@@ -25,9 +26,13 @@
     top: 0;
     bottom: 0;
 
-    background-image: url(../images/fireworks.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
+    .vjs-control-bar { display: none; }
+
+    #fireworks-vid { 
+      width: 100% !important;
+      height: 100% !important;
+
+      background-color: transparent;
+    }
   }
 }

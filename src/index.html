@@ -19,13 +19,17 @@
         <script src="components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
 
-    </head>
-    <body>
+        <link href="http://vjs.zencdn.net/4.10/video-js.css" rel="stylesheet">
+        <script src="http://vjs.zencdn.net/4.10/video.js"></script>
+
         <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
 
-       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-        <!-- build:js js/main.min.js -->
+    </head>
+    <body>
+
+         <!-- build:js js/main.min.js -->
         <script src="js/plugins/viewport-unit-fallback.js"></script>
         <!--[if gt IE 8]>
             <script src="js/plugins/audio-playback.js"></script>
@@ -34,6 +38,7 @@
             <script src="js/plugins/audio-playback.js"></script>
         <!--<![endif]-->
         <script src="js/plugins/background-size.js"></script>
+        <script src="js/plugins/fireworks.js"></script>
         <script src="js/plugins/ie8-fixes.js"></script>
         <script src="js/plugins/randomize-list.js"></script>
         <script src="js/plugins/memory-game-animations.js"></script>
@@ -125,7 +130,11 @@
                     </li>
                 </ul>
 
-                <div class="fireworks" style="display: none;"></div>
+                <div class="fireworks">
+                <video id="fireworks-vid" class="video-js" controls="false">
+                    <source src="video/fireworks.flv" type="video/x-flv">
+                </video>
+                </div>
 
                 <ul class="trophies">
                 </ul>

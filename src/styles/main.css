@@ -951,6 +951,7 @@ html {
 /* line 4, ../sass/custom/game.scss */
 
 .memory-game section.game .intro {
+  position: relative;
   font-size: 1.5em;
   z-index: 1;
 }
@@ -963,7 +964,7 @@ html {
   }
 }
 
-/* line 14, ../sass/custom/game.scss */
+/* line 15, ../sass/custom/game.scss */
 
 .memory-game section.game .fireworks {
   content: '';
@@ -975,10 +976,20 @@ html {
   right: 0;
   top: 0;
   bottom: 0;
-  background-image: url(../images/fireworks.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
+}
+
+/* line 29, ../sass/custom/game.scss */
+
+.memory-game section.game .fireworks .vjs-control-bar {
+  display: none;
+}
+
+/* line 31, ../sass/custom/game.scss */
+
+.memory-game section.game .fireworks #fireworks-vid {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: transparent;
 }
 
 /* line 1, ../sass/custom/intro-outro.scss */
