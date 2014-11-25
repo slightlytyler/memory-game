@@ -16,6 +16,10 @@
     width: 100%;
     max-width: 60px;
 
+    @media screen and ( max-height: 768px ){
+      max-width: 40px;
+    }
+
     animation: pop .4s ease-in-out;
 
     &:last-child { margin-right: 0; }
@@ -29,16 +33,16 @@
 
         transition: transform .3s ease-in-out;
 
-        &.a { top: -29px; }
+        &.a { top: -44%; }
 
-        &.b { top: -24px; }
+        &.b { top: -44%; }
 
         &.c { 
-          top: -23px; 
+          top: -40%; 
           left: -1px;
         }
 
-        &.d { top: -13px; }
+        &.d { top: -36%; }
       }
     }
 

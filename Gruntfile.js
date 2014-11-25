@@ -174,19 +174,14 @@ module.exports = function (grunt) {
 				]
 			},
 		},
-		'http-server': {
-
-      'dev': {
-          root: 'src',
-          port: 5000,
-          host: "127.0.0.1",
-          showDir : true,
-          autoIndex: true,
-          ext: "html",
-          runInBackground: false
-
-      }
-    },
+		 express: {
+	    server: {
+	      options: {
+	        port: 5757,
+	        bases: ['src']
+	      }
+	    }
+	  },
 		watch: {
 				/* watch to see if the sass files are changed, compile and add prefixes */
 				styles: {
@@ -208,5 +203,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('build', ['clean','copy:dist', 'sass:dist', 'autoprefixer:dist', 'modernizr', 'concat:dist', 'uglify:dist', 'useminPrepare', 'usemin', 'htmlmin:dist', 'imagemin']);
 	grunt.registerTask('default', ['watch']);
 
-	grunt.loadNpmTasks('grunt-http-server');
+  grunt.loadNpmTasks('grunt-express');
+
+  grunt.registerTask('server', ['express', 'express-keepalive']);
 };

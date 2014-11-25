@@ -5,9 +5,6 @@ $(window).load(function(){
     $('html').addClass('flash');
     $('.fireworks__fallback').remove();
 
-    // Override click handler on media object;
-    videojs.MediaTechController.prototype.onClick = function() {};
-
     _V_.options.flash.params = {
          wmode: "transparent"
      };
@@ -18,12 +15,14 @@ $(window).load(function(){
         this.currentTime(0);
       });
 
+    videoPlayer.tech.removeControlsListeners();
+
       this.load();
     });
 
     $('.fireworks').show();
   } else {
     $('html').addClass('no-flash');
-    $('.fireworks__fallback').remove();
+    $('.fireworks').remove();
   }
 });

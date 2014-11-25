@@ -4,6 +4,7 @@ $silver: #969799;
 
 html {
   font-size: 12px;
+  -webkit-font-variant-ligatures: no-common-ligatures;
 }
 
 .memory-game {
@@ -25,8 +26,12 @@ html {
 
     max-width: 900px;
 
-    @media screen and ( min-height: 800px ){
+    @media screen and ( min-width: 1280px ) and ( min-height: 769px ) {
       max-width: 1088px;
+    }
+
+    @media screen and ( max-height: 768px ){
+      max-width: 640px;
     }
   }
 }

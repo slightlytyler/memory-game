@@ -6,6 +6,12 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and ( max-height: 769px ){
+    font-size: 3em; 
+  }
+
+  span { white-space: nowrap; }
 }
 
 .ie8 .memory-game .intro.main {

@@ -16,11 +16,16 @@ function memoryGameOutro(_callback) {
   $('.memory-game .game .intro').show().fadeOut(400);
 
   window.setTimeout(function(){
-      $('.memory-game .outro').fadeIn(400);
+    $('.memory-game .outro').fadeIn(400);
+    $('.fireworks__fallback').fadeIn(400);
+
+    window.setTimeout(function(){
+        $('.fireworks__fallback').fadeOut(400);
+    }, 1000);
   }, 400);
 
   if (typeof _callback === "undefined" || _callback === null) {
-    console.log('No callback on pageLoad, proceeding');
+    // console.log('No callback on pageLoad, proceeding');
   } else {
     _callback(); 
   }
@@ -33,8 +38,10 @@ function memoryGameReset() {
     var intro = $('.memory-game .game .intro');
     var outro = $('.memory-game .outro');
 
-    videojs('fireworks-vid').pause();
-    videojs('fireworks-vid').currentTime(0);
+    if($('html').hasClass('flash')) {
+      videojs('fireworks-vid').pause();
+      videojs('fireworks-vid').currentTime(0);
+    }
 
     cardsContainer.fadeOut(150);
     trophyCase.fadeOut(150);

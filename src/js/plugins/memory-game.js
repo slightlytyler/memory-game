@@ -81,7 +81,9 @@
                 $('.memory-game').addClass('winner');
 
                 memoryGameOutro(function() {
-                    videojs('fireworks-vid').play();
+                    if($('html').hasClass('flash')) {
+                        videojs('fireworks-vid').play();
+                    }
                 });
             }
         }
