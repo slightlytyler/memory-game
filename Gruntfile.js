@@ -4,6 +4,7 @@ module.exports = function (grunt) {
 	// load all grunt tasks
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
+
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
@@ -202,8 +203,5 @@ module.exports = function (grunt) {
 	//Task list
 	grunt.registerTask('build', ['clean','copy:dist', 'sass:dist', 'autoprefixer:dist', 'modernizr', 'concat:dist', 'uglify:dist', 'useminPrepare', 'usemin', 'htmlmin:dist', 'imagemin']);
 	grunt.registerTask('default', ['watch']);
-
-  grunt.loadNpmTasks('grunt-express');
-
   grunt.registerTask('server', ['express', 'express-keepalive']);
 };

@@ -18,6 +18,7 @@
     "grunt-http-server": "^1.1.0",
     "grunt-modernizr": "~0.3.0",
     "grunt-usemin": "~0.1.12",
-    "matchdep": "~0.1.2"
+    "matchdep": "~0.1.2",
+    "viewport-units-buggyfill": "^0.4.1"
   }
 }

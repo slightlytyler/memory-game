@@ -11,9 +11,20 @@
       font-size: 1.75em; 
     }
 
-    @media screen and ( max-height: 769px ){
+    @media ( max-height: 768px ), ( max-width: 768px ){
       font-size: 1em; 
       letter-spacing: 2px;
     }
   }
+}
+
+.portrait:not(.ie8) .memory-game section.game {
+  position: fixed;
+  width: 100%;
+  top: 42.5%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  .intro { margin-bottom: 2em; }
 }

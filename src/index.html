@@ -26,6 +26,8 @@
     <body>
 
          <!-- build:js js/main.min.js -->
+        <script src="js/plugins/viewport-buggyfill.js"></script>
+        <script src="js/plugins/orientation-detection.js"></script>
         <script src="js/plugins/viewport-unit-fallback.js"></script>
         <!--[if gt IE 8]>
             <script src="js/plugins/audio-playback.js"></script>
@@ -133,10 +135,10 @@
                 </div>
 
                 <div class="fireworks__fallback" style="display: none;"></div>
-
-                <ul class="trophies">
-                </ul>
             </section>
+
+            <ul class="trophies">
+            </ul>
 
             <section style="display: none;" class="outro container">
                 <span class="thank-you">Thank you</span>
