@@ -11,7 +11,9 @@ $(window).load(function(){
       this.pause();
       this.currentTime(0);
     });
-  }); 
 
-  videoPlayer.load();
+    this.load();
+  });
+
+  $('.fireworks').show();
 });
