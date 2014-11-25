@@ -1,19 +1,29 @@
 $(window).load(function(){
-  // Override click handler on media object;
-  videojs.MediaTechController.prototype.onClick = function() {};
+  var _flash_installed = ((typeof navigator.plugins != "undefined" && typeof navigator.plugins["Shockwave Flash"] == "object") || (window.ActiveXObject && (new ActiveXObject("ShockwaveFlash.ShockwaveFlash")) != false));
 
-  _V_.options.flash.params = {
-       wmode: "transparent"
-   };
+  if(_flash_installed) {
+    $('html').addClass('flash');
+    $('.fireworks__fallback').remove();
 
-  var videoPlayer = videojs('fireworks-vid', { wmode: "transparent" }, function() {
-    this.on('ended', function() {
-      this.pause();
-      this.currentTime(0);
+    // Override click handler on media object;
+    videojs.MediaTechController.prototype.onClick = function() {};
+
+    _V_.options.flash.params = {
+         wmode: "transparent"
+     };
+
+    var videoPlayer = videojs('fireworks-vid', { wmode: "transparent" }, function() {
+      this.on('ended', function() {
+        this.pause();
+        this.currentTime(0);
+      });
+
+      this.load();
     });
 
-    this.load();
-  });
-
-  $('.fireworks').show();
+    $('.fireworks').show();
+  } else {
+    $('html').addClass('no-flash');
+    $('.fireworks__fallback').remove();
+  }
 });

@@ -964,34 +964,6 @@ html {
   }
 }
 
-/* line 15, ../sass/custom/game.scss */
-
-.memory-game section.game .fireworks {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 144%;
-  z-index: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-/* line 29, ../sass/custom/game.scss */
-
-.memory-game section.game .fireworks .vjs-control-bar {
-  display: none;
-}
-
-/* line 31, ../sass/custom/game.scss */
-
-.memory-game section.game .fireworks #fireworks-vid {
-  width: 100% !important;
-  height: 100% !important;
-  background-color: transparent;
-}
-
 /* line 1, ../sass/custom/intro-outro.scss */
 
 .memory-game section.intro,
@@ -1249,4 +1221,54 @@ section.outro span {
 
 .ie8 .memory-game.winner ul.trophies img.open {
   display: inline-block;
+}
+
+/* line 1, ../sass/custom/fireworks.scss */
+
+.fireworks,
+.fireworks__fallback {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 144%;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* line 17, ../sass/custom/fireworks.scss */
+
+.fireworks .vjs-control-bar {
+  display: none;
+}
+
+/* line 19, ../sass/custom/fireworks.scss */
+
+.fireworks #fireworks-vid {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: transparent;
+}
+
+/* line 27, ../sass/custom/fireworks.scss */
+
+.fireworks__fallback {
+  background-image: url(../images/fireworks.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+/* line 35, ../sass/custom/fireworks.scss */
+
+.flash .fireworks__fallback {
+  display: none !important;
+}
+
+/* line 39, ../sass/custom/fireworks.scss */
+
+.no-flash .fireworks {
+  display: none !important;
 }
