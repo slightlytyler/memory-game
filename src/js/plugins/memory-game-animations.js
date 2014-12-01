@@ -15,14 +15,20 @@ function memoryGameIntro() {
 function memoryGameOutro(_callback) {
   $('.memory-game .game .intro').show().fadeOut(400);
 
-  window.setTimeout(function(){
-    $('.memory-game .outro').fadeIn(400);
-    $('.fireworks__fallback').fadeIn(400);
-
+  if($('html').hasClass('no-flash')) {
     window.setTimeout(function(){
-        $('.fireworks__fallback').fadeOut(400);
-    }, 1000);
-  }, 400);
+      $('.fireworks__fallback').fadeIn(400);
+
+      window.setTimeout(function(){
+          $('.fireworks__fallback').fadeOut(400);
+          $('.memory-game .outro').fadeIn(400);
+      }, 1000);
+    }, 400);
+  } else if($('html').hasClass('flash')) {
+    window.setTimeout(function(){
+      $('.memory-game .outro').fadeIn(400);
+    }, 400);
+  }
 
   if (typeof _callback === "undefined" || _callback === null) {
     // console.log('No callback on pageLoad, proceeding');

@@ -11,6 +11,10 @@
     font-size: 3em; 
   }
 
+  @media ( max-height: 667px ), ( max-width: 667px ){
+    font-size: 1.5em; 
+  }
+
   span { white-space: nowrap; }
 }
 

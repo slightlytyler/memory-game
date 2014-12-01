@@ -13,6 +13,14 @@
 
     margin-bottom: 32px;
 
+    @media ( max-height: 768px ), ( max-width: 768px ){
+      margin-bottom: 24px;
+    }
+
+    @media ( max-height: 667px ), ( max-width: 667px ){
+      margin-bottom: 12px;
+    }
+
     perspective: 1000;
     transition: transform .4s ease-in-out;
 
@@ -58,7 +66,7 @@
       transform: rotateY(180deg);
       visibility: hidden;
 
-      border: 5px solid $silver;
+      border: 3px solid $silver;
     }
 
     img.card--front {

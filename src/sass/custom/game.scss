@@ -15,6 +15,14 @@
       font-size: 1em; 
       letter-spacing: 2px;
     }
+
+    @media ( max-height: 667px ), ( max-width: 667px ){
+      font-size: .65em; 
+    }
+
+    @media ( max-height: 480px ), ( max-width: 480px ){
+      font-size: .5em;
+    }
   }
 }
 
