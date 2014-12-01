@@ -44,6 +44,8 @@ function memoryGameReset() {
     var intro = $('.memory-game .game .intro');
     var outro = $('.memory-game .outro');
 
+    $('.memory-game').removeClass('winner');
+
     if($('html').hasClass('flash')) {
       videojs('fireworks-vid').pause();
       videojs('fireworks-vid').currentTime(0);
@@ -63,8 +65,6 @@ function memoryGameReset() {
         allCards.removeClass('flipped');
         allCards.removeClass('matched');
     }, 150);
-
-    $('.memory-game').removeClass('winner');
 
     window.setTimeout(function(){
         cardsContainer.hide().fadeIn(400);

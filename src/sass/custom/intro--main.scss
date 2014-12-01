@@ -1,5 +1,6 @@
 .memory-game .intro.main {
   position: fixed;
+  overflow: visible;
   font-size: 5.5em;
   text-shadow: 0 3px 9px rgba(0,0,0,.85), 0 0 1px black;
 
@@ -19,8 +20,8 @@
 }
 
 .ie8 .memory-game .intro.main {
-  width: 426px;
-  margin-left: -213px;
+  width: 670px;
+  margin-left: -335px;
 
   height: 252px;
   margin-top: -126px;

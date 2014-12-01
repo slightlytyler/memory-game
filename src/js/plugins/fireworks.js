@@ -15,7 +15,18 @@ $(window).load(function(){
         this.currentTime(0);
       });
 
-    videoPlayer.tech.removeControlsListeners();
+      this.on('pause', function() {
+        if($('.memory-game').hasClass('winner') ) {
+          this.play();
+        }
+      });
+
+      this.on('play', function() {
+        if(! $('.memory-game').hasClass('winner') ) {
+          this.pause();
+          this.currentTime(0);
+        }
+      });
 
       this.load();
     });
