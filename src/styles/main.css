@@ -1247,7 +1247,7 @@ section.outro span {
 .memory-game section.outro ul.charities li {
   display: table-cell;
   width: 33.33333%;
-  text-align: left;
+  text-align: center;
 }
 
 /* line 79, ../sass/custom/outro.scss */

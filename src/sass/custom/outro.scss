@@ -72,7 +72,7 @@
     li {
       @include span-columns(1 of 3, table);
 
-      text-align: left;
+      text-align: center;
     }
   }
 
