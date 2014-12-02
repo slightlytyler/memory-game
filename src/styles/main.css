@@ -693,16 +693,19 @@ html {
   width: 100%;
   max-height: 15%;
   height: 72px;
-  background-color: #969799;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-image: url(../images/bottom-bar.jpg);
 }
 
-/* line 12, ../sass/custom/bottom-bar.scss */
+/* line 15, ../sass/custom/bottom-bar.scss */
 
 .memory-game section.bottom-bar .container {
   height: 100%;
 }
 
-/* line 14, ../sass/custom/bottom-bar.scss */
+/* line 17, ../sass/custom/bottom-bar.scss */
 
 .memory-game section.bottom-bar img.logo,
 .memory-game section.bottom-bar section.playback-controls {
@@ -713,7 +716,7 @@ html {
   transform: translateY(-50%);
 }
 
-/* line 19, ../sass/custom/bottom-bar.scss */
+/* line 22, ../sass/custom/bottom-bar.scss */
 
 .memory-game section.bottom-bar img.logo {
   width: 35%;
@@ -721,13 +724,13 @@ html {
   left: 0;
 }
 
-/* line 26, ../sass/custom/bottom-bar.scss */
+/* line 29, ../sass/custom/bottom-bar.scss */
 
 .memory-game section.bottom-bar section.playback-controls {
   right: 0;
 }
 
-/* line 28, ../sass/custom/bottom-bar.scss */
+/* line 31, ../sass/custom/bottom-bar.scss */
 
 .memory-game section.bottom-bar button {
   background: none;
@@ -738,25 +741,25 @@ html {
   margin-right: 12px;
 }
 
-/* line 37, ../sass/custom/bottom-bar.scss */
+/* line 40, ../sass/custom/bottom-bar.scss */
 
 .memory-game section.bottom-bar button#volume.muted img.mute {
   display: none;
 }
 
-/* line 39, ../sass/custom/bottom-bar.scss */
+/* line 42, ../sass/custom/bottom-bar.scss */
 
 .memory-game section.bottom-bar button#volume.muted img.volume-up {
   display: inline-block;
 }
 
-/* line 42, ../sass/custom/bottom-bar.scss */
+/* line 45, ../sass/custom/bottom-bar.scss */
 
 .memory-game section.bottom-bar button:last-child {
   margin-right: 0;
 }
 
-/* line 44, ../sass/custom/bottom-bar.scss */
+/* line 47, ../sass/custom/bottom-bar.scss */
 
 .memory-game section.bottom-bar button img {
   width: 24px;
@@ -765,19 +768,19 @@ html {
   transform: translateY(5px);
 }
 
-/* line 48, ../sass/custom/bottom-bar.scss */
+/* line 51, ../sass/custom/bottom-bar.scss */
 
 .memory-game section.bottom-bar button img.mute {
   display: inline-block;
 }
 
-/* line 50, ../sass/custom/bottom-bar.scss */
+/* line 53, ../sass/custom/bottom-bar.scss */
 
 .memory-game section.bottom-bar button img.volume-up {
   display: none;
 }
 
-/* line 56, ../sass/custom/bottom-bar.scss */
+/* line 59, ../sass/custom/bottom-bar.scss */
 
 .ie8 .memory-game section.bottom-bar img.logo {
   width: 300px;
@@ -785,7 +788,7 @@ html {
   margin-top: -12px;
 }
 
-/* line 63, ../sass/custom/bottom-bar.scss */
+/* line 66, ../sass/custom/bottom-bar.scss */
 
 .ie8 .memory-game section.bottom-bar .playback-controls {
   width: 30%;
@@ -794,19 +797,19 @@ html {
   margin-top: -13px;
 }
 
-/* line 73, ../sass/custom/bottom-bar.scss */
+/* line 76, ../sass/custom/bottom-bar.scss */
 
 .ie8 .playback-controls button {
   float: right;
 }
 
-/* line 74, ../sass/custom/bottom-bar.scss */
+/* line 77, ../sass/custom/bottom-bar.scss */
 
 .ie8 #volume {
   display: none;
 }
 
-/* line 75, ../sass/custom/bottom-bar.scss */
+/* line 78, ../sass/custom/bottom-bar.scss */
 
 .ie8 #memory-game-reset {
   margin-top: 10px;
@@ -1321,9 +1324,9 @@ section.outro span {
 /* line 18, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies.zoom {
-  -webkit-transform: scale(2) translateY(-100%);
-  -ms-transform: scale(2) translateY(-100%);
-  transform: scale(2) translateY(-100%);
+  -webkit-transform: scale(2) translateY(-25%);
+  -ms-transform: scale(2) translateY(-25%);
+  transform: scale(2) translateY(-25%);
 }
 
 @media (max-height: 480px), (max-width: 480px) {
@@ -1380,42 +1383,46 @@ section.outro span {
 /* line 50, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li section.gift-parts .card__top.a {
-  top: -44%;
+  top: -36.5%;
+  left: -2%;
+  width: 125%;
 }
 
-/* line 52, ../sass/custom/trophies.scss */
+/* line 56, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li section.gift-parts .card__top.b {
   top: -44%;
 }
 
-/* line 54, ../sass/custom/trophies.scss */
+/* line 58, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li section.gift-parts .card__top.c {
-  top: -40%;
+  top: -98%;
   left: -1px;
 }
 
-/* line 59, ../sass/custom/trophies.scss */
+/* line 63, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li section.gift-parts .card__top.d {
-  top: -36%;
+  top: -59%;
+  left: -3.5%;
+  width: 109%;
 }
 
-/* line 63, ../sass/custom/trophies.scss */
+/* line 71, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li img {
   width: 100%;
 }
 
-/* line 66, ../sass/custom/trophies.scss */
+/* line 74, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li img.closed,
 .memory-game ul.trophies li img.open {
   display: none;
 }
 
-/* line 75, ../sass/custom/trophies.scss */
+/* line 83, ../sass/custom/trophies.scss */
 
 .memory-game.winner section.gift-parts .card__top.a {
   -webkit-transform: translateX(-22px) rotate(-35deg);
@@ -1423,7 +1430,7 @@ section.outro span {
   transform: translateX(-22px) rotate(-35deg);
 }
 
-/* line 77, ../sass/custom/trophies.scss */
+/* line 85, ../sass/custom/trophies.scss */
 
 .memory-game.winner section.gift-parts .card__top.b {
   -webkit-transform: translateX(22px) rotate(35deg);
@@ -1431,7 +1438,7 @@ section.outro span {
   transform: translateX(22px) rotate(35deg);
 }
 
-/* line 79, ../sass/custom/trophies.scss */
+/* line 87, ../sass/custom/trophies.scss */
 
 .memory-game.winner section.gift-parts .card__top.c {
   -webkit-transform: translateX(-22px) rotate(-35deg);
@@ -1439,7 +1446,7 @@ section.outro span {
   transform: translateX(-22px) rotate(-35deg);
 }
 
-/* line 81, ../sass/custom/trophies.scss */
+/* line 89, ../sass/custom/trophies.scss */
 
 .memory-game.winner section.gift-parts .card__top.d {
   -webkit-transform: translateX(22px) rotate(35deg);
@@ -1447,32 +1454,32 @@ section.outro span {
   transform: translateX(22px) rotate(35deg);
 }
 
-/* line 87, ../sass/custom/trophies.scss */
+/* line 95, ../sass/custom/trophies.scss */
 
 .ie8 .memory-game ul.trophies img.closed {
   display: inline-block;
 }
 
-/* line 89, ../sass/custom/trophies.scss */
+/* line 97, ../sass/custom/trophies.scss */
 
 .ie8 .memory-game ul.trophies img.card__top,
 .ie8 .memory-game ul.trophies img.card__bottom {
   display: none;
 }
 
-/* line 94, ../sass/custom/trophies.scss */
+/* line 102, ../sass/custom/trophies.scss */
 
 .ie8 .memory-game.winner ul.trophies li {
   max-width: 80px;
 }
 
-/* line 98, ../sass/custom/trophies.scss */
+/* line 106, ../sass/custom/trophies.scss */
 
 .ie8 .memory-game.winner ul.trophies img.closed {
   display: none;
 }
 
-/* line 100, ../sass/custom/trophies.scss */
+/* line 108, ../sass/custom/trophies.scss */
 
 .ie8 .memory-game.winner ul.trophies img.open {
   display: inline-block;

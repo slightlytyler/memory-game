@@ -16,7 +16,7 @@
   }
 
   &.zoom {
-    transform: scale(2) translateY(-100%);
+    transform: scale(2) translateY(-25%);
 
     @media ( max-height: 480px ), ( max-width: 480px ) {
       transform: scale(1.5) translateY(-100%);
@@ -47,16 +47,24 @@
 
         transition: transform .3s ease-in-out;
 
-        &.a { top: -44%; }
+        &.a { 
+          top: -36.5%;
+          left: -2%;
+          width: 125%;
+        }
 
         &.b { top: -44%; }
 
         &.c { 
-          top: -40%; 
+          top: -98%; 
           left: -1px;
         }
 
-        &.d { top: -36%; }
+        &.d { 
+          top: -59%;
+          left: -3.5%;
+          width: 109%;
+        }
       }
     }
 
