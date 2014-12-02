@@ -9,8 +9,14 @@
   padding: 0;
   margin: 0;
 
+  transition: transform .3s ease-out;
+
   @media ( max-height: 667px ), ( max-width: 667px ){
     bottom: 15%;
+  }
+
+  &.zoom {
+    transform: scale(2) translateY(-100%);
   }
 
   li { 

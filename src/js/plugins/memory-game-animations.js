@@ -30,6 +30,10 @@ function memoryGameOutro(_callback) {
     }, 400);
   }
 
+  window.setTimeout(function(){
+      $('.trophies').addClass('zoom');
+  }, 2400);
+
   if (typeof _callback === "undefined" || _callback === null) {
     // console.log('No callback on pageLoad, proceeding');
   } else {
