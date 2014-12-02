@@ -1,8 +1,9 @@
 .fireworks, .fireworks__fallback {
+    position: fixed;
     content: '';
 
     height: 100vh;
-
+    width: 100vw;
     z-index: 0;
 
     left: 0;
@@ -12,9 +13,6 @@
 }
 
 .fireworks {
-    position: fixed;
-    width: 100vw;
-
     .vjs-control-bar { display: none; }
 
     #fireworks-vid { 
@@ -26,10 +24,6 @@
 }
 
 .fireworks__fallback {
-    position: absolute;
-    width: 100%;
-
-    background-image: url(../images/fireworks.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;

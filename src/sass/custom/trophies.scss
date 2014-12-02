@@ -17,6 +17,10 @@
 
   &.zoom {
     transform: scale(2) translateY(-100%);
+
+    @media ( max-height: 480px ), ( max-width: 480px ) {
+      transform: scale(1.5) translateY(-100%);
+    }
   }
 
   li { 

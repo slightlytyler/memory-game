@@ -16,23 +16,29 @@ function memoryGameOutro(_callback) {
   $('.memory-game .game .intro').show().fadeOut(400);
 
   if($('html').hasClass('no-flash')) {
+    $('.fireworks__fallback').css('background-image', 'url(../images/fireworks.gif)');
+
     window.setTimeout(function(){
       $('.fireworks__fallback').fadeIn(400);
 
       window.setTimeout(function(){
-          $('.fireworks__fallback').fadeOut(400);
-          $('.memory-game .outro').fadeIn(400);
-      }, 1000);
+          $('.fireworks__fallback').fadeOut(300);
+          $('.memory-game .outro').fadeIn(1000);
+
+          window.setTimeout(function(){
+              $('.trophies').addClass('zoom');
+          }, 400);
+      }, 5000);
     }, 400);
   } else if($('html').hasClass('flash')) {
     window.setTimeout(function(){
       $('.memory-game .outro').fadeIn(400);
     }, 400);
-  }
 
-  window.setTimeout(function(){
-      $('.trophies').addClass('zoom');
-  }, 2400);
+    window.setTimeout(function(){
+        $('.trophies').addClass('zoom');
+    }, 2400);
+  }
 
   if (typeof _callback === "undefined" || _callback === null) {
     // console.log('No callback on pageLoad, proceeding');

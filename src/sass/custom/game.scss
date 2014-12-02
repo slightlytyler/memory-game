@@ -24,6 +24,10 @@
     @media ( max-height: 480px ), ( max-width: 480px ){
       font-size: .65em;
     }
+
+    @media ( max-width: 320px ){
+      font-size: .5em;
+    }
   }
 }
 

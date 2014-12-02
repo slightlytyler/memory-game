@@ -1042,7 +1042,15 @@ html {
   }
 }
 
-/* line 30, ../sass/custom/game.scss */
+@media (max-width: 320px) {
+  /* line 4, ../sass/custom/game.scss */
+
+  .memory-game section.game .intro {
+    font-size: .5em;
+  }
+}
+
+/* line 34, ../sass/custom/game.scss */
 
 .portrait:not(.ie8) .memory-game section.game {
   position: fixed;
@@ -1054,7 +1062,7 @@ html {
   transform: translate(-50%, -50%);
 }
 
-/* line 38, ../sass/custom/game.scss */
+/* line 42, ../sass/custom/game.scss */
 
 .portrait:not(.ie8) .memory-game section.game .intro {
   margin-bottom: 2em;
@@ -1318,7 +1326,17 @@ section.outro span {
   transform: scale(2) translateY(-100%);
 }
 
-/* line 22, ../sass/custom/trophies.scss */
+@media (max-height: 480px), (max-width: 480px) {
+  /* line 18, ../sass/custom/trophies.scss */
+
+  .memory-game ul.trophies.zoom {
+    -webkit-transform: scale(1.5) translateY(-100%);
+    -ms-transform: scale(1.5) translateY(-100%);
+    transform: scale(1.5) translateY(-100%);
+  }
+}
+
+/* line 26, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li {
   display: inline-block;
@@ -1330,26 +1348,26 @@ section.outro span {
 }
 
 @media (max-width: 960px) {
-  /* line 22, ../sass/custom/trophies.scss */
+  /* line 26, ../sass/custom/trophies.scss */
 
   .memory-game ul.trophies li {
     max-width: 40px;
   }
 }
 
-/* line 35, ../sass/custom/trophies.scss */
+/* line 39, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li:last-child {
   margin-right: 0;
 }
 
-/* line 37, ../sass/custom/trophies.scss */
+/* line 41, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li section.gift-parts {
   position: relative;
 }
 
-/* line 40, ../sass/custom/trophies.scss */
+/* line 44, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li section.gift-parts .card__top {
   position: absolute;
@@ -1359,45 +1377,45 @@ section.outro span {
   transition: transform .3s ease-in-out;
 }
 
-/* line 46, ../sass/custom/trophies.scss */
+/* line 50, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li section.gift-parts .card__top.a {
   top: -44%;
 }
 
-/* line 48, ../sass/custom/trophies.scss */
+/* line 52, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li section.gift-parts .card__top.b {
   top: -44%;
 }
 
-/* line 50, ../sass/custom/trophies.scss */
+/* line 54, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li section.gift-parts .card__top.c {
   top: -40%;
   left: -1px;
 }
 
-/* line 55, ../sass/custom/trophies.scss */
+/* line 59, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li section.gift-parts .card__top.d {
   top: -36%;
 }
 
-/* line 59, ../sass/custom/trophies.scss */
+/* line 63, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li img {
   width: 100%;
 }
 
-/* line 62, ../sass/custom/trophies.scss */
+/* line 66, ../sass/custom/trophies.scss */
 
 .memory-game ul.trophies li img.closed,
 .memory-game ul.trophies li img.open {
   display: none;
 }
 
-/* line 71, ../sass/custom/trophies.scss */
+/* line 75, ../sass/custom/trophies.scss */
 
 .memory-game.winner section.gift-parts .card__top.a {
   -webkit-transform: translateX(-22px) rotate(-35deg);
@@ -1405,7 +1423,7 @@ section.outro span {
   transform: translateX(-22px) rotate(-35deg);
 }
 
-/* line 73, ../sass/custom/trophies.scss */
+/* line 77, ../sass/custom/trophies.scss */
 
 .memory-game.winner section.gift-parts .card__top.b {
   -webkit-transform: translateX(22px) rotate(35deg);
@@ -1413,7 +1431,7 @@ section.outro span {
   transform: translateX(22px) rotate(35deg);
 }
 
-/* line 75, ../sass/custom/trophies.scss */
+/* line 79, ../sass/custom/trophies.scss */
 
 .memory-game.winner section.gift-parts .card__top.c {
   -webkit-transform: translateX(-22px) rotate(-35deg);
@@ -1421,7 +1439,7 @@ section.outro span {
   transform: translateX(-22px) rotate(-35deg);
 }
 
-/* line 77, ../sass/custom/trophies.scss */
+/* line 81, ../sass/custom/trophies.scss */
 
 .memory-game.winner section.gift-parts .card__top.d {
   -webkit-transform: translateX(22px) rotate(35deg);
@@ -1429,32 +1447,32 @@ section.outro span {
   transform: translateX(22px) rotate(35deg);
 }
 
-/* line 83, ../sass/custom/trophies.scss */
+/* line 87, ../sass/custom/trophies.scss */
 
 .ie8 .memory-game ul.trophies img.closed {
   display: inline-block;
 }
 
-/* line 85, ../sass/custom/trophies.scss */
+/* line 89, ../sass/custom/trophies.scss */
 
 .ie8 .memory-game ul.trophies img.card__top,
 .ie8 .memory-game ul.trophies img.card__bottom {
   display: none;
 }
 
-/* line 90, ../sass/custom/trophies.scss */
+/* line 94, ../sass/custom/trophies.scss */
 
 .ie8 .memory-game.winner ul.trophies li {
   max-width: 80px;
 }
 
-/* line 94, ../sass/custom/trophies.scss */
+/* line 98, ../sass/custom/trophies.scss */
 
 .ie8 .memory-game.winner ul.trophies img.closed {
   display: none;
 }
 
-/* line 96, ../sass/custom/trophies.scss */
+/* line 100, ../sass/custom/trophies.scss */
 
 .ie8 .memory-game.winner ul.trophies img.open {
   display: inline-block;
@@ -1464,8 +1482,10 @@ section.outro span {
 
 .fireworks,
 .fireworks__fallback {
+  position: fixed;
   content: '';
   height: 100vh;
+  width: 100vw;
   z-index: 0;
   left: 0;
   right: 0;
@@ -1473,20 +1493,13 @@ section.outro span {
   bottom: 0;
 }
 
-/* line 14, ../sass/custom/fireworks.scss */
-
-.fireworks {
-  position: fixed;
-  width: 100vw;
-}
-
-/* line 18, ../sass/custom/fireworks.scss */
+/* line 16, ../sass/custom/fireworks.scss */
 
 .fireworks .vjs-control-bar {
   display: none;
 }
 
-/* line 20, ../sass/custom/fireworks.scss */
+/* line 18, ../sass/custom/fireworks.scss */
 
 .fireworks #fireworks-vid {
   width: 100% !important;
@@ -1494,24 +1507,21 @@ section.outro span {
   background-color: transparent;
 }
 
-/* line 28, ../sass/custom/fireworks.scss */
+/* line 26, ../sass/custom/fireworks.scss */
 
 .fireworks__fallback {
-  position: absolute;
-  width: 100%;
-  background-image: url(../images/fireworks.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
 
-/* line 39, ../sass/custom/fireworks.scss */
+/* line 33, ../sass/custom/fireworks.scss */
 
 .flash .fireworks__fallback {
   display: none !important;
 }
 
-/* line 43, ../sass/custom/fireworks.scss */
+/* line 37, ../sass/custom/fireworks.scss */
 
 .no-flash .fireworks {
   display: none !important;
