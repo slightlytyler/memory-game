@@ -16,7 +16,7 @@ function memoryGameOutro(_callback) {
   $('.memory-game .game .intro').show().fadeOut(400);
 
   if($('html').hasClass('no-flash')) {
-    $('.fireworks__fallback').css('background-image', 'url(../images/fireworks.gif)');
+    $('.fireworks__fallback').addClass('play');
 
     window.setTimeout(function(){
       $('.fireworks__fallback').fadeIn(400);
@@ -60,6 +60,8 @@ function memoryGameReset() {
       videojs('fireworks-vid').pause();
       videojs('fireworks-vid').currentTime(0);
     }
+
+    $('.fireworks__fallback').removeClass('play');
 
     cardsContainer.fadeOut(150);
     trophyCase.fadeOut(150);

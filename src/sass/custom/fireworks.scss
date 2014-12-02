@@ -25,11 +25,15 @@
 }
 
 .fireworks__fallback {
-    width: 70vw;
-    
+    width: 100vw;
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
+
+    &.play {
+        background-image: url(../images/fireworks.gif);
+    }
 }
 
 .flash {

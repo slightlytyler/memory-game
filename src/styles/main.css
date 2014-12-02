@@ -1522,19 +1522,25 @@ section.outro span {
 /* line 27, ../sass/custom/fireworks.scss */
 
 .fireworks__fallback {
-  width: 70vw;
+  width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
 
-/* line 36, ../sass/custom/fireworks.scss */
+/* line 34, ../sass/custom/fireworks.scss */
+
+.fireworks__fallback.play {
+  background-image: url(../images/fireworks.gif);
+}
+
+/* line 40, ../sass/custom/fireworks.scss */
 
 .flash .fireworks__fallback {
   display: none !important;
 }
 
-/* line 40, ../sass/custom/fireworks.scss */
+/* line 44, ../sass/custom/fireworks.scss */
 
 .no-flash .fireworks {
   display: none !important;
