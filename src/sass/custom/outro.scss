@@ -24,12 +24,15 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 2.5em;
+    white-space: nowrap;
 
     @media ( max-width: 960px ) {
+
       font-size: 1.25em; 
     }
 
     @media ( max-height: 667px ), ( max-width: 667px ){
+      white-space: wrap;
       font-size: .75em; 
     }
 
