@@ -23,7 +23,7 @@ function memoryGameOutro(_callback) {
 
       window.setTimeout(function(){
           $('.fireworks__fallback').fadeOut(300);
-          $('.memory-game .outro').fadeIn(1000);
+          $('.memory-game .outro').fadeIn(1300);
 
           window.setTimeout(function(){
               $('.trophies').addClass('zoom');

@@ -1308,9 +1308,9 @@ section.outro span {
   text-align: center;
   padding: 0;
   margin: 0;
-  -webkit-transition: -webkit-transform .3s ease-out;
-  transition: -ms-transform .3s ease-out;
-  transition: transform .3s ease-out;
+  -webkit-transition: -webkit-transform .6s ease-out;
+  transition: -ms-transform .6s ease-out;
+  transition: transform .6s ease-out;
 }
 
 @media (max-height: 667px), (max-width: 667px) {
@@ -1492,7 +1492,6 @@ section.outro span {
   position: fixed;
   content: '';
   height: 100vh;
-  width: 100vw;
   z-index: 0;
   left: 0;
   right: 0;
@@ -1500,13 +1499,19 @@ section.outro span {
   bottom: 0;
 }
 
-/* line 16, ../sass/custom/fireworks.scss */
+/* line 14, ../sass/custom/fireworks.scss */
+
+.fireworks {
+  width: 100vw;
+}
+
+/* line 17, ../sass/custom/fireworks.scss */
 
 .fireworks .vjs-control-bar {
   display: none;
 }
 
-/* line 18, ../sass/custom/fireworks.scss */
+/* line 19, ../sass/custom/fireworks.scss */
 
 .fireworks #fireworks-vid {
   width: 100% !important;
@@ -1514,21 +1519,22 @@ section.outro span {
   background-color: transparent;
 }
 
-/* line 26, ../sass/custom/fireworks.scss */
+/* line 27, ../sass/custom/fireworks.scss */
 
 .fireworks__fallback {
+  width: 70vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
 
-/* line 33, ../sass/custom/fireworks.scss */
+/* line 36, ../sass/custom/fireworks.scss */
 
 .flash .fireworks__fallback {
   display: none !important;
 }
 
-/* line 37, ../sass/custom/fireworks.scss */
+/* line 40, ../sass/custom/fireworks.scss */
 
 .no-flash .fireworks {
   display: none !important;
