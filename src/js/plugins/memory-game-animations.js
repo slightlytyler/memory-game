@@ -79,6 +79,7 @@ function memoryGameReset() {
     window.setTimeout(function(){
         cardsContainer.hide().fadeIn(400);
         trophyCase.hide().fadeIn(400);
+        $('.trophies').removeClass('zoom');
         intro.show().fadeIn(400);
     }, 400);
 }
