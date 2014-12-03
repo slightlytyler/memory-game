@@ -555,6 +555,14 @@ th {
    BASE STYLES
    ========================================================================== */
 
+@font-face {
+  font-family: 'blackjackregular';
+  src: url("../fonts/blackjar-webfont.eot");
+  src: url("../fonts/blackjar-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/blackjar-webfont.woff2") format("woff2"), url("../fonts/blackjar-webfont.woff") format("woff"), url("../fonts/blackjar-webfont.ttf") format("truetype"), url("../fonts/blackjar-webfont.svg#blackjackregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* line 1, ../sass/base/_global.scss */
 
 * {
@@ -1202,7 +1210,7 @@ section.outro span {
 /* line 39, ../sass/custom/outro.scss */
 
 .memory-game section.outro p span {
-  font-family: 'Herr Von Muellerhoff', cursive;
+  font-family: 'blackjackregular', cursive;
   margin-top: 1em;
   font-size: 210%;
 }
