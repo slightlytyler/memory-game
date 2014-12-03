@@ -32,8 +32,8 @@ function memoryGameOutro(_callback) {
     }, 400);
   } else if($('html').hasClass('flash')) {
     window.setTimeout(function(){
-      $('.memory-game .outro').fadeIn(400);
-    }, 400);
+      $('.memory-game .outro').fadeIn(800);
+    }, 1000);
 
     window.setTimeout(function(){
         $('.trophies').addClass('zoom');

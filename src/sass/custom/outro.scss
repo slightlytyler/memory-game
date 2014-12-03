@@ -1,7 +1,7 @@
 .memory-game section.outro {
   position: fixed;
   left: 50%;
-  top: 37%;
+  top: 40%;
   letter-spacing: 3px;
 
   transform: translate(-50%, -50%);
@@ -36,7 +36,12 @@
       font-size: .75em; 
     }
 
-    span { font-size: 120%; }
+    span { 
+      font-family: 'Herr Von Muellerhoff', cursive;
+
+      margin-top: 1em;
+      font-size: 210%; 
+    }
   }
 
   ul.charities {
