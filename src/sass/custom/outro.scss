@@ -37,6 +37,10 @@
       font-size: .55em; 
     }
 
+    @media ( max-width: 480px ) {
+      font-size: .75em;
+    }
+
     span { 
       font-family: 'blackjackregular', cursive;
 

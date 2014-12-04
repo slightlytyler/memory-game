@@ -1229,7 +1229,15 @@ section.outro span {
   }
 }
 
-/* line 40, ../sass/custom/outro.scss */
+@media (max-width: 480px) {
+  /* line 23, ../sass/custom/outro.scss */
+
+  .memory-game section.outro p {
+    font-size: .75em;
+  }
+}
+
+/* line 44, ../sass/custom/outro.scss */
 
 .memory-game section.outro p span {
   font-family: 'blackjackregular', cursive;
@@ -1237,7 +1245,7 @@ section.outro span {
   font-size: 210%;
 }
 
-/* line 48, ../sass/custom/outro.scss */
+/* line 52, ../sass/custom/outro.scss */
 
 .memory-game section.outro ul.charities {
   list-style: none;
@@ -1247,7 +1255,7 @@ section.outro span {
 }
 
 @media (max-width: 960px) {
-  /* line 48, ../sass/custom/outro.scss */
+  /* line 52, ../sass/custom/outro.scss */
 
   .memory-game section.outro ul.charities {
     font-size: .6em;
@@ -1259,7 +1267,7 @@ section.outro span {
 }
 
 @media (max-height: 667px), (max-width: 667px) {
-  /* line 48, ../sass/custom/outro.scss */
+  /* line 52, ../sass/custom/outro.scss */
 
   .memory-game section.outro ul.charities {
     margin-top: 1.5em;
@@ -1267,7 +1275,7 @@ section.outro span {
   }
 }
 
-/* line 68, ../sass/custom/outro.scss */
+/* line 72, ../sass/custom/outro.scss */
 
 .memory-game section.outro ul.charities div.row {
   width: 100%;
@@ -1278,7 +1286,7 @@ section.outro span {
 }
 
 @media (max-width: 960px) {
-  /* line 68, ../sass/custom/outro.scss */
+  /* line 72, ../sass/custom/outro.scss */
 
   .memory-game section.outro ul.charities div.row {
     margin-bottom: 1em;
@@ -1286,14 +1294,14 @@ section.outro span {
 }
 
 @media (max-height: 667px), (max-width: 667px) {
-  /* line 68, ../sass/custom/outro.scss */
+  /* line 72, ../sass/custom/outro.scss */
 
   .memory-game section.outro ul.charities div.row {
     font-size: .65em;
   }
 }
 
-/* line 83, ../sass/custom/outro.scss */
+/* line 87, ../sass/custom/outro.scss */
 
 .memory-game section.outro ul.charities li {
   display: table-cell;
@@ -1301,14 +1309,14 @@ section.outro span {
   text-align: center;
 }
 
-/* line 90, ../sass/custom/outro.scss */
+/* line 94, ../sass/custom/outro.scss */
 
 .memory-game section.outro span.blessing {
   font-size: 2.5em;
 }
 
 @media (max-width: 960px) {
-  /* line 90, ../sass/custom/outro.scss */
+  /* line 94, ../sass/custom/outro.scss */
 
   .memory-game section.outro span.blessing {
     font-size: 1.5em;
@@ -1316,14 +1324,14 @@ section.outro span {
 }
 
 @media (max-height: 667px), (max-width: 667px) {
-  /* line 90, ../sass/custom/outro.scss */
+  /* line 94, ../sass/custom/outro.scss */
 
   .memory-game section.outro span.blessing {
     font-size: .75em;
   }
 }
 
-/* line 103, ../sass/custom/outro.scss */
+/* line 107, ../sass/custom/outro.scss */
 
 .ie8 .memory-game section.outro {
   width: 1088px;
@@ -1376,9 +1384,9 @@ section.outro span {
   /* line 23, ../sass/custom/trophies.scss */
 
   .memory-game ul.trophies.zoom {
-    -webkit-transform: scale(1.5) translateY(-25%);
-    -ms-transform: scale(1.5) translateY(-25%);
-    transform: scale(1.5) translateY(-25%);
+    -webkit-transform: scale(1.5) translateY(-15%);
+    -ms-transform: scale(1.5) translateY(-15%);
+    transform: scale(1.5) translateY(-15%);
   }
 }
 
