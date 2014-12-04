@@ -12,14 +12,19 @@
   transition: transform .6s ease-out;
 
   @media ( max-height: 667px ), ( max-width: 667px ){
-    bottom: 15%;
+    bottom: 14%;
+  }
+
+  @media ( max-height: 360px ) { 
+    left: 20%;
+    width: 60%;
   }
 
   &.zoom {
     transform: scale(2) translateY(-25%);
 
     @media ( max-height: 480px ), ( max-width: 480px ) {
-      transform: scale(1.5) translateY(-50%);
+      transform: scale(1.5) translateY(-25%);
     }
   }
 

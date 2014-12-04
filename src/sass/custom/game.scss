@@ -26,7 +26,11 @@
     }
 
     @media ( max-width: 320px ){
-      font-size: .5em;
+      font-size: .75em;
+    }
+
+    @media ( max-height: 360px ) { 
+      font-size: .65em;
     }
   }
 }

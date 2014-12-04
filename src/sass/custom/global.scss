@@ -45,6 +45,10 @@ html {
      @media ( max-width: 320px ){
       max-width: 280px;
     }
+
+    @media ( max-height: 360px ) { 
+      max-width: 280px;
+    }
   }
 }
 
