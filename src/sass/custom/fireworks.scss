@@ -38,11 +38,19 @@
     }
 
     img {
-        height: 100%;
         position: fixed;
         bottom: 14%;
-        left: -28%;
     }
+}
+
+.portrait .fireworks__fallback img {
+    height: 100%;
+    left: -28%;
+}
+
+.landscape .fireworks__fallback img {
+    width: 100%;
+    left: 0;
 }
 
 .flash {

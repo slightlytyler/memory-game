@@ -29,7 +29,7 @@ function memoryGameOutro(_callback) {
           window.setTimeout(function(){
               $('.trophies').addClass('zoom');
           }, 400);
-      }, 4500);
+      }, 4000);
     }, 400);
   } else if($('html').hasClass('flash')) {
     window.setTimeout(function(){
