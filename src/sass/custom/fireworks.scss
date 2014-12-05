@@ -31,8 +31,17 @@
     background-repeat: no-repeat;
     background-position: center bottom;
 
+    z-index: -1;
+
     &.play {
-        background-image: url(../images/fireworks.gif);
+        z-index: 0;
+    }
+
+    img {
+        height: 100%;
+        position: fixed;
+        bottom: 14%;
+        left: -28%;
     }
 }
 

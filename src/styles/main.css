@@ -1577,21 +1577,31 @@ section.outro span {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+  z-index: -1;
 }
 
-/* line 34, ../sass/custom/fireworks.scss */
+/* line 36, ../sass/custom/fireworks.scss */
 
 .fireworks__fallback.play {
-  background-image: url(../images/fireworks.gif);
+  z-index: 0;
 }
 
 /* line 40, ../sass/custom/fireworks.scss */
+
+.fireworks__fallback img {
+  height: 100%;
+  position: fixed;
+  bottom: 14%;
+  left: -28%;
+}
+
+/* line 49, ../sass/custom/fireworks.scss */
 
 .flash .fireworks__fallback {
   display: none !important;
 }
 
-/* line 44, ../sass/custom/fireworks.scss */
+/* line 53, ../sass/custom/fireworks.scss */
 
 .no-flash .fireworks {
   display: none !important;

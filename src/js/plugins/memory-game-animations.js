@@ -16,6 +16,7 @@ function memoryGameOutro(_callback) {
   $('.memory-game .game .intro').show().fadeOut(400);
 
   if($('html').hasClass('no-flash')) {
+    $('.fireworks__fallback').html('<img src="images/fireworks.gif" />');
     $('.fireworks__fallback').addClass('play');
 
     window.setTimeout(function(){
@@ -28,7 +29,7 @@ function memoryGameOutro(_callback) {
           window.setTimeout(function(){
               $('.trophies').addClass('zoom');
           }, 400);
-      }, 5000);
+      }, 4500);
     }, 400);
   } else if($('html').hasClass('flash')) {
     window.setTimeout(function(){
@@ -61,6 +62,7 @@ function memoryGameReset() {
       videojs('fireworks-vid').currentTime(0);
     }
 
+    $('.fireworks__fallback').emtpy();
     $('.fireworks__fallback').removeClass('play');
 
     cardsContainer.fadeOut(150);
