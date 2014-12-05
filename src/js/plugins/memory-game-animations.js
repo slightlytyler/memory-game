@@ -24,17 +24,17 @@ function memoryGameOutro(_callback) {
 
       window.setTimeout(function(){
           $('.fireworks__fallback').fadeOut(300);
-          $('.memory-game .outro').fadeIn(1300);
+          $('.memory-game .outro').fadeIn(500);
 
           window.setTimeout(function(){
               $('.trophies').addClass('zoom');
           }, 400);
-      }, 4000);
+      }, 3000);
     }, 400);
   } else if($('html').hasClass('flash')) {
     window.setTimeout(function(){
       $('.memory-game .outro').fadeIn(800);
-    }, 1000);
+    }, 750);
 
     window.setTimeout(function(){
         $('.trophies').addClass('zoom');
@@ -62,7 +62,7 @@ function memoryGameReset() {
       videojs('fireworks-vid').currentTime(0);
     }
 
-    $('.fireworks__fallback').emtpy();
+    $('.fireworks__fallback img').remove();
     $('.fireworks__fallback').removeClass('play');
 
     cardsContainer.fadeOut(150);

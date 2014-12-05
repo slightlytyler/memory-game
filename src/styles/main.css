@@ -1097,7 +1097,7 @@ html {
   display: inline;
 }
 
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 321px) and (max-width: 667px) {
   /* line 44, ../sass/custom/game.scss */
 
   .memory-game section.game .intro span.landscape {

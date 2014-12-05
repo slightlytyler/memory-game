@@ -44,7 +44,7 @@
     span.landscape {
       display: inline;
 
-      @media ( min-width: 321px ) and ( max-width: 480px ) { 
+      @media ( min-width: 321px ) and ( max-width: 667px ) { 
         display: block;
       }
     }
