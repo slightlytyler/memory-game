@@ -992,7 +992,7 @@ html {
 /* line 93, ../sass/custom/cards.scss */
 
 .ie8 .memory-game ul.cards img.card--front.a {
-  margin-top: -50px;
+  margin-top: -60px;
 }
 
 /* line 95, ../sass/custom/cards.scss */
@@ -1036,7 +1036,7 @@ html {
   }
 }
 
-@media (max-height: 768px), (max-width: 768px) {
+@media (max-width: 768px) {
   /* line 4, ../sass/custom/game.scss */
 
   .memory-game section.game .intro {
@@ -1045,7 +1045,7 @@ html {
   }
 }
 
-@media (max-height: 667px), (max-width: 667px) {
+@media (max-width: 667px) {
   /* line 4, ../sass/custom/game.scss */
 
   .memory-game section.game .intro {
@@ -1053,7 +1053,7 @@ html {
   }
 }
 
-@media (max-height: 480px), (max-width: 480px) {
+@media (max-width: 480px) {
   /* line 4, ../sass/custom/game.scss */
 
   .memory-game section.game .intro {
@@ -1383,7 +1383,7 @@ section.outro span {
   width: 1088px;
   height: 598px;
   margin-left: -450px;
-  margin-top: -100px;
+  margin-top: -200px;
 }
 
 /* line 1, ../sass/custom/trophies.scss */

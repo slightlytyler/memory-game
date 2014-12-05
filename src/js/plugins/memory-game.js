@@ -44,11 +44,16 @@
 
                     if(cardOne.data('card-type') == cardTwo.data('card-type')) {
                         window.setTimeout(function(){
-                            flippedCards.addClass('matched');
+                            cardOne.addClass('matched');
+                            cardTwo.addClass('matched');
 
                             addTrophy(cardOne.data('card-type'))
 
                             unMatchedCards.removeClass('locked');
+
+                            window.setTimeout(function(){
+                                flippedCards.removeClass('flipped');
+                            }, 500);
                         }, 700);
 
                         window.setTimeout(function(){
